@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title></title>
+	  <link rel="stylesheet" type="text/css" href="/src/css/login.css">
+	  <link rel="stylesheet" type="text/css" href="/res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css">
+	</head>
+	<body>
+    <div class="m-card">
+
+      <div class="nav">
+        <div class="item j-logintab act">登录</div>
+        <div class="item j-regtab">注册</div>
+      </div>
+
+      <div class="form-wrapper j-login">
+        <div class="logo"><h1>JUNE</h1><span>登录</span></div>
+        <form class="m-form j-login_form" onsubmit="return false;">
+          <input type="text" name="username" class="u-ipt ipt" placeholder="用户名" />
+          <input type="password" name="password" class="u-ipt ipt" placeholder="密码" />
+          <div class="err j-login_err f-dn">
+            <i class="icon-remove-sign"></i>
+            <span class="j-login_err_text"></span>
+          </div>
+          <button type="button" class="u-btn btn j-login_btn">登&nbsp;&nbsp;录</button>
+        </form>
+      </div>
+
+      <div class="form-wrapper j-reg f-dn">
+        <div class="logo"><h1>JUNE</h1><span>注册</span></div>
+        <form class="m-form j-reg_form" onsubmit="return false;">
+          <input type="text" name="username" class="u-ipt ipt" placeholder="用户名" />
+          <input type="password" name="password" class="u-ipt ipt" placeholder="密码" />
+          <input type="password" name="repeat_password" class="u-ipt ipt" placeholder="再次输入密码" />
+          <div class="err j-reg_err f-dn">
+            <i class="icon-remove-sign"></i>
+            <span class="j-reg_err_text"></span>
+          </div>
+          <button type="button" class="u-btn btn j-reg_btn">注&nbsp;&nbsp;册</button>
+        </form>
+      </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="/src/javascript/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/src/javascript/normal/md5.js"></script>
+    <script type="text/javascript" src="/src/javascript/normal/login.js"></script>
+	</body>
+</html>

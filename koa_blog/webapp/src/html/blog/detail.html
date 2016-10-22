@@ -1,0 +1,34 @@
+<div class="m-blog cnt j-blog">
+  <h3 class="title"><%= blog.name %></h3>
+  <a class="back" href="#/blog/<%= user %>"><i class="icon-double-angle-left"></i><span>返回</span></a>
+  <div class="opr">
+    <a href="#">评论：<%= blog.comment %></a>
+    <a href="#">转载：<%= blog.share %></a>
+  </div>
+  <div class="info">作者：<a><%= blog.username %></a><span class="spit">|</span>发布时间：<span><%= blog.createTime %></span><span class="spit">|</span>分类：<a><%= blog.cat %></a></div>
+  <div class="content"><%= blog.content %></div>
+</div>
+<!-- 快捷按钮 -->
+<ul class="m-link">
+  <li><a href="#" title="向上" data-ction="up">
+    <i class="icon-circle-arrow-up icon-2x"></i>
+  </a></li>
+  <li><a href="#" title="评论" data-action="addComment">
+    <i class="icon-comment-alt icon-2x"></i>
+  </a></li>
+  <li><a href="#" title="转载" data-action="share">
+    <i class="icon-share-alt icon-2x"></i>
+  </a></li>
+  <% if(window.user&&window.user.username&&window.user.username === user) { %>
+  <!-- 作者权限 -->
+  <li><a href="#" title="编辑" data-action="edit" data-id="<%= blog.id %>">
+    <i class="icon-edit icon-2x"></i>
+  </a></li>
+  <li><a href="#" title="删除" data-action="delete" data-id="<%= blog.id %>">
+    <i class="icon-trash icon-2x"></i>
+  </a></li>
+  <li><a href="#" title="新建" data-action="new">
+    <i class="icon-pencil icon-2x"></i>
+  </a></li>
+  <% } %>
+</ul>

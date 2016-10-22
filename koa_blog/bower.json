@@ -1,0 +1,20 @@
+{
+  "name": "june01box",
+  "version": "0.0.1",
+  "homepage": "https://github.com/JuneAndGreen/june01Box",
+  "authors": [
+    "june_01"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "easyTool": "master",
+    "requirejs": "~2.2.0",
+    "angular": "angularjs#~1.5.5"
+  }
+}
