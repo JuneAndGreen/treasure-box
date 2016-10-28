@@ -35,19 +35,18 @@ var db = {
       logger.debug(`执行sql语句：${sql}`, sqlParam);
     }
 
-    let query;
     if(connection) {
-      query = connection.query(sql, sqlParam, (err, rows) => callback(err, rows));
+      connection.query(sql, sqlParam, (err, rows) => callback(err, rows));
     } else {
       if(!pool) {
         initMysqlPool();
       }
-      pool.getConnection(function(err, connection) {
+      pool.getConnection((err, connection) => {
         if(err) {
           callback(err);
           return;
         }
-        query = connection.query(sql, sqlParam, function(err, rows) {
+        connection.query(sql, sqlParam, (err, rows) => {
           connection.release();
           if(err) {
             callback(err)
@@ -65,7 +64,7 @@ var db = {
     if(!pool) {
       initMysqlPool();
     }
-    pool.getConnection(function(err, connection) {
+    pool.getConnection((err, connection) => {
       if(err) {
         connection && connection.release();
         callback(err, connection);
@@ -81,14 +80,12 @@ var db = {
     if(!pool) {
       initMysqlPool();
     }
-    pool.getConnection(function(err, connection) {
+    pool.getConnection((err, connection) => {
       if(err) {
         connection && connection.release();
         callback(err, connection);
       } else {
-        connection.beginTransaction(function(err) {
-          callback(err, connection);
-        });
+        connection.beginTransaction((err) => {callback(err, connection)});
       }
     });
   }),
@@ -96,7 +93,7 @@ var db = {
    * 结束并提交事务
    */
   commitTransaction: wa(function(connection, callback) {
-    connection.commit(function(err) {
+    connection.commit((err) => {
       connection.release();
       callback(err);
     });
@@ -105,7 +102,7 @@ var db = {
    * 结束并回滚事务
    */
   rollbackTransaction: wa(function(connection, callback) {
-    connection.rollback(function(err) {
+    connection.rollback((err) => {
       connection.release();
       callback(err);
     });
@@ -152,7 +149,7 @@ var db = {
       connection = null;
     }
     let genObj = gen.find(obj);
-    db.query(genObj.sql, genObj.data, function(err, rows) {
+    db.query(genObj.sql, genObj.data, (err, rows) => {
       if(err) callback(err);
       else {
         let rets = [];

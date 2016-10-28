@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>edit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="/res/lib/bootstrap-3.3.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/res/lib/bootstrap-3.3.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="/res/lib/summernote-0.8.2/summernote.css">
+	<link rel="stylesheet" type="text/css" href="/src/css/edit.css">
+</head>
+<body>
+	<!-- begin navigator -->
+	<nav class="navbar navbar-inverse" role="navigation">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">express_blog</a>
+	    </div>
+	  </div>
+	</nav>
+	<!-- end navigator -->
+
+	<div class="container my-cnt">
+		<!-- begin title -->
+		<div class="row">
+			<div class="col-md-12">
+				<input id="title" type="text" class="form-control input-lg" placeholder="请输入标题">
+			</div>
+		</div>
+		<!-- end title -->
+
+		<!-- begin editor -->
+		<div class="row">
+			<div class="col-md-12">
+				<div id="summernote"></div>
+			</div>
+		</div>
+		<!-- end editor -->
+
+		<!-- begin btns -->
+		<div class="row">
+			<div class="col-md-2">
+				<button id="submit" type="button" class="btn btn-block btn-lg btn-primary">提交</button>
+			</div>
+			<div class="col-md-2">
+				<button id="cancel" type="button" class="btn btn-block btn-lg btn-default">取消</button>
+			</div>
+		</div>
+		<!-- end btns -->
+
+	</div>
+
+	<script type="text/javascript" src="/res/lib/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="/res/lib/bootstrap-3.3.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/res/lib/summernote-0.8.2/summernote.min.js"></script>
+	<script type="text/javascript" src="/src/javascript/edit.js"></script>
+</body>
+</html>

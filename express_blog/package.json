@@ -1,0 +1,27 @@
+{
+  "name": "express_blog",
+  "version": "1.0.0",
+  "description": "an express blog",
+  "main": "/src/app.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "blog"
+  ],
+  "author": "june_01",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "mysql": "^2.11.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.1.2",
+    "should": "^11.1.1"
+  }
+}
