@@ -16,8 +16,11 @@
   "author": "june_01",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
     "ejs": "^2.5.2",
     "express": "^4.14.0",
+    "express-session": "^1.14.1",
     "mysql": "^2.11.1"
   },
   "devDependencies": {

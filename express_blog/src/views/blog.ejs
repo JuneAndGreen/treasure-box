@@ -15,7 +15,8 @@
 	      <a class="navbar-brand" href="#">express_blog</a>
 	    </div>
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <button id="add" type="button" class="btn btn-primary navbar-btn navbar-right">创建博客</button>
+	      <button id="add" type="button" class="btn btn-primary navbar-btn navbar-left">创建博客</button>
+	      <button id="logout" type="button" class="btn btn-default navbar-btn navbar-right">登出</button>
 	    </div>
 	  </div>
 	</nav>
@@ -26,10 +27,10 @@
 		<div class="row">
 			<div class="col-md-12 panel panel-default">
 			  <div class="panel-body">
-			  	<h2>Basic panel example</h2>
+			  	<h2><%= blog.title %></h2>
 			  	<div class="my-btn_cnt">
-				  	<span class="glyphicon glyphicon-edit"></span>
-						<span class="glyphicon glyphicon-remove-sign"></span>
+				  	<a href="/edit/<%= blog.id %>"><span class="glyphicon glyphicon-edit"></span></a>
+						<a href="/api/del?id=<%= blog.id %>"><span class="glyphicon glyphicon-remove-sign"></span></a>
 			  	</div>
 			  </div>
 			</div>
@@ -39,8 +40,8 @@
 		<!-- begin content -->
 		<div class="row">
 			<div class="col-md-12 panel panel-default">
-				<div class="panel-body">
-			    Basic panel example
+				<div class="panel-body my-content_cnt">
+			    <%- blog.content %>
 			  </div>
 			</div>
 		</div>

@@ -5,11 +5,12 @@ module.exports = {
 	 * 增
 	 */
 	add: function(user, callback) {
+		var that = this;
 		query('INSERT INTO user(username, password) VALUES (?, ?)', [user.username, user.password], function(err, rows) {
 			if(err) return callback(err);
 
 			var insertId = rows.insertId;
-			this.findOne(insertId, function(err, user) {
+			that.findOne(insertId, function(err, user) {
 				callback(err, user);
 			});
 		});

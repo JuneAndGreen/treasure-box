@@ -15,6 +15,9 @@
 	    <div class="navbar-header">
 	      <a class="navbar-brand" href="#">express_blog</a>
 	    </div>
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <button id="logout" type="button" class="btn btn-default navbar-btn navbar-right">登出</button>
+	    </div>
 	  </div>
 	</nav>
 	<!-- end navigator -->
@@ -23,7 +26,7 @@
 		<!-- begin title -->
 		<div class="row">
 			<div class="col-md-12">
-				<input id="title" type="text" class="form-control input-lg" placeholder="请输入标题">
+				<input id="title" type="text" class="form-control input-lg" placeholder="请输入标题" value="<% if(blog.title) { %><%= blog.title %><% } %>">
 			</div>
 		</div>
 		<!-- end title -->

@@ -15,7 +15,8 @@
 	      <a class="navbar-brand" href="#">express_blog</a>
 	    </div>
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <button id="add" type="button" class="btn btn-primary navbar-btn navbar-right">创建博客</button>
+	      <button id="add" type="button" class="btn btn-primary navbar-btn navbar-left">创建博客</button>
+	      <button id="logout" type="button" class="btn btn-default navbar-btn navbar-right">登出</button>
 	    </div>
 	  </div>
 	</nav>
@@ -28,25 +29,19 @@
 				<div class="panel-body">
 
 					<!-- begin bloglist -->
-					<ul class="list-group my-list_group">
-					  <li href="#" class="list-group-item">
-					  	<span class="my-blog_title">Cras justo odio</span>
-					  	<span class="glyphicon glyphicon-edit"></span>
-					  	<span class="glyphicon glyphicon-remove-sign"></span>
-					  </li>
-					  <li href="#" class="list-group-item">
-					  	<span>Dapibus ac facilisis in</span>
-					  </li>
-					  <li href="#" class="list-group-item">
-					  	<span>Morbi leo risus</span>
-					  </li>
-					  <li href="#" class="list-group-item">
-					  	<span>Porta ac consectetur ac</span>
-					  </li>
-					  <li href="#" class="list-group-item">
-					  	<span>Vestibulum at eros</span>
-					  </li>
-					</ul>
+						<% if(!blogs.length) { %>
+						<div class="my-no_data">暂无数据</div>
+						<% } else { %>
+						<ul class="list-group my-list_group">
+							<% blogs.forEach(function(blog) { %>
+						  <li class="list-group-item">
+						  	<a href="/blog/<%= blog.id %>"><span class="my-blog_title"><%= blog.title %></span></a>
+						  	<a href="/edit/<%= blog.id %>"><span class="glyphicon glyphicon-edit"></span></a>
+						  	<a href="/api/del?id=<%= blog.id %>"><span class="glyphicon glyphicon-remove-sign"></span></a>
+						  </li>
+						  <% }); %>
+						</ul>
+					  <% } %>
 					<!-- end bloglist -->
 
 				</div>

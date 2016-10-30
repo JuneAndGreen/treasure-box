@@ -27,23 +27,27 @@
 
 					  <div role="tabpanel" class="tab-pane active" id="login">
 					  	<!-- begin login form -->
-						  <form role="form">
+						  <form id="login_form" role="form">
 							  <div class="form-group form-group-lg">
-							    <input type="email" class="form-control" name="username" placeholder="请输入用户名" maxlength="10">
+							    <input type="text" class="form-control" name="username" placeholder="请输入用户名" maxlength="10">
 							  </div>
 							  <div class="form-group form-group-lg">
 							    <input type="password" class="form-control" name="password" placeholder="请输入密码" maxlength="10">
 							  </div>
-							  <button type="submit" class="btn btn-primary btn-block btn-lg">登录</button>
+							  <div class="bg-danger my-error_tip my-hide">
+							  	<span class="glyphicon glyphicon-exclamation-sign"></span>
+							  	<span id="login_error"></span>
+							  </div>
+							  <button id="login_submit" type="button" class="btn btn-primary btn-block btn-lg">登录</button>
 							</form>
 							<!-- end login form -->
 					  </div>
 
 					  <div role="tabpanel" class="tab-pane" id="register">
 					  	<!-- begin register form -->
-					  	<form role="form">
+					  	<form id="register_form" role="form">
 							  <div class="form-group form-group-lg">
-							    <input type="email" class="form-control" name="username" placeholder="请输入用户名" maxlength="10">
+							    <input type="text" class="form-control" name="username" placeholder="请输入用户名" maxlength="10">
 							  </div>
 							  <div class="form-group form-group-lg">
 							    <input type="password" class="form-control" name="password" placeholder="请输入密码" maxlength="10">
@@ -51,7 +55,11 @@
 							  <div class="form-group form-group-lg">
 							    <input type="password" class="form-control" name="confirm_password" placeholder="请再次输入密码" maxlength="10">
 							  </div>
-							  <button type="submit" class="btn btn-primary btn-block btn-lg">注册</button>
+							  <div class="bg-danger my-error_tip my-hide">
+							  	<span class="glyphicon glyphicon-exclamation-sign"></span>
+							  	<span id="register_error"></span>
+							  </div>
+							  <button id="register_submit" type="button" class="btn btn-primary btn-block btn-lg">注册</button>
 							</form>
 							<!-- end register form -->
 					  </div>
@@ -66,6 +74,7 @@
 
 	<script type="text/javascript" src="/res/lib/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="/res/lib/bootstrap-3.3.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/res/lib/md5.js"></script>
 	<script type="text/javascript" src="/src/javascript/login.js"></script>
 </body>
 </html>

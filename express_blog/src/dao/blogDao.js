@@ -4,7 +4,7 @@ module.exports = {
 	/**
 	 * 增
 	 */
-	add: function(blog) {
+	add: function(blog, callback) {
 		var that = this;
 
 		query('INSERT INTO blog(title, username, content) VALUES (?, ?, ?)', [blog.title, blog.username, blog.content], function(err, rows) {
@@ -19,7 +19,7 @@ module.exports = {
 	/**
 	 * 删
 	 */
-	del: function(id) {
+	del: function(id, callback) {
 		query('DELETE FROM blog WHERE id=?', [id], function(err, rows) {
 			callback(err, rows);
 		});
@@ -27,7 +27,7 @@ module.exports = {
 	/**
 	 * 改
 	 */
-	update: function(blog) {
+	update: function(blog, callback) {
 		var that = this;
 
 		query('UPDAET blog SET title=?, content=? WHERE id=?', [blog.title, blog.content, blog.id], function(err, rows) {
@@ -41,12 +41,12 @@ module.exports = {
 	/**
 	 * 查
 	 */
-	findAllByUsername: function(username) {
+	findAllByUsername: function(username, callback) {
 		query('SELECT * FROM blog WHERE username=?', [username], function(err, rows) {
 			callback(err, rows);
 		});
 	},
-	findOne: function(id) {
+	findOne: function(id, callback) {
 		query('SELECT * FROM blog WHERE id=?', [id], function(err, rows) {
 			callback(err, rows&&rows[0]);
 		});

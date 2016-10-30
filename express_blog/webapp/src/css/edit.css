@@ -1,11 +1,11 @@
 html, body {
-	font-family: '微软雅黑', 'Microsoft YAHEI';
+  font-family: '微软雅黑', 'Microsoft YAHEI';
 }
 
 .my-cnt {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .my-cnt .row {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
