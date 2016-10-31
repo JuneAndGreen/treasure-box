@@ -24,7 +24,7 @@ module.exports = {
         return res.send(_.resPkg('PARAMERR'));
       }
 
-      res.redirect('/');
+      res.send(_.resPkg('SUCCESS', blog));
     });
   },
   /**
@@ -33,7 +33,7 @@ module.exports = {
   update: function(req, res, next) {
     // 校验参数
     var ret = _.validate(req.body, {
-      id: {required: true, isNumber: true},
+      id: {required: true},
       title: {required: true},
       content: {required: true}
     });
@@ -49,10 +49,11 @@ module.exports = {
 
       blogDao.update(ret.data, function(err, blog) {
         if(err) {
+          console.log(err.stack);
           return res.send(_.resPkg('PARAMERR'));
         }
 
-        res.redirect('/');
+        res.send(_.resPkg('SUCCESS', blog));
       });
     });
   },
@@ -111,6 +112,7 @@ module.exports = {
         return res.render('error');
       }
 
+      blog.content = blog.content.replace(/\'/g, '\\\'');
       res.render('edit', {
         blog: blog
       });

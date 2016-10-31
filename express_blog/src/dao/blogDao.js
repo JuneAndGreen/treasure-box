@@ -30,7 +30,7 @@ module.exports = {
 	update: function(blog, callback) {
 		var that = this;
 
-		query('UPDAET blog SET title=?, content=? WHERE id=?', [blog.title, blog.content, blog.id], function(err, rows) {
+		query('UPDATE blog SET title=?, content=? WHERE id=?', [blog.title, blog.content, blog.id], function(err, rows) {
 			if(err) return callback(err);
 
 			that.findOne(blog.id, function(err, blog) {

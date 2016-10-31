@@ -15,5 +15,7 @@ router.get('/blog/:id', blogController.detailPage);
 router.get('/add', blogController.addPage);
 router.get('/edit/:id', blogController.editPage);
 router.get('/api/del', blogController.del);
+router.post('/api/add', blogController.add);
+router.post('/api/update', blogController.update);
 
 module.exports = router;

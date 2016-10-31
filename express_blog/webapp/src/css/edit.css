@@ -9,3 +9,16 @@ html, body {
 .my-cnt .row {
   margin-bottom: 20px;
 }
+
+#err_modal .modal-content {
+  z-index: 10;
+}
+#err_modal .close {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+#err_modal .modal-body {
+  padding: 30px;
+  font-size: 20px;
+  z-index: -1;
+}

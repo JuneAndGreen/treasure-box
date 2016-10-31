@@ -52,6 +52,25 @@
 
 	</div>
 
+	<!-- begin error modal  -->
+	<div id="err_modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-sm">
+	    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <div class="modal-body">保存失败</div>
+      </div>
+	  </div>
+	</div>
+	<!-- end error modal -->
+
+	<script type="text/javascript">
+		window._content = '';
+		window._id = '';
+		<% if(blog.id) { %>
+			window._content = '<%- blog.content %>';
+			window._id = '<%= blog.id %>';
+		<% } %>
+	</script>
 	<script type="text/javascript" src="/res/lib/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="/res/lib/bootstrap-3.3.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/res/lib/summernote-0.8.2/summernote.min.js"></script>
