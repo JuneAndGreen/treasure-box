@@ -1,4 +1,4 @@
-var blogDao = require('../dao/blogDao');
+var blogService = require('../dao/blogService');
 var _ = require('../util/api');
 
 module.exports = {
@@ -19,7 +19,7 @@ module.exports = {
     // 补充创建者
     ret.data.username = req.session.username;
 
-    blogDao.add(ret.data, function(err, blog) {
+    blogService.add(ret.data, function(err, blog) {
       if(err) {
         return res.send(_.resPkg('PARAMERR'));
       }
@@ -42,19 +42,13 @@ module.exports = {
       return res.send(_.resPkg('PARAMERR'));
     }
 
-    blogDao.findOne(ret.data.id, function(err, blog) {
-      if(err || !blog) {
+    blogService.update(ret.data, function(err, blog) {
+      if(err) {
+        console.log(err.stack);
         return res.send(_.resPkg('PARAMERR'));
       }
 
-      blogDao.update(ret.data, function(err, blog) {
-        if(err) {
-          console.log(err.stack);
-          return res.send(_.resPkg('PARAMERR'));
-        }
-
-        res.send(_.resPkg('SUCCESS', blog));
-      });
+      res.send(_.resPkg('SUCCESS', blog));
     });
   },
   /**
@@ -70,18 +64,13 @@ module.exports = {
       return res.send(_.resPkg('PARAMERR'));
     }
 
-    blogDao.findOne(ret.data.id, function(err, blog) {
-      if(err || !blog || blog.username !== req.session.username) {
+    ret.data.username = req.session.username;
+    blogService.del(ret.data, function(err) {
+      if(err) {
         return res.send(_.resPkg('PARAMERR'));
       }
 
-      blogDao.del(ret.data.id, function(err) {
-        if(err) {
-          return res.send(_.resPkg('PARAMERR'));
-        }
-
-        res.redirect('/');
-      });
+      res.redirect('/');
     });
   },
   /**
@@ -91,7 +80,7 @@ module.exports = {
     // 获取用户名 
     var username = req.session.username;
 
-    blogDao.findAllByUsername(username, function(err, blogs) {
+    blogService.findAllByUsername(username, function(err, blogs) {
       if(err) {
         return res.render('error');
       }
@@ -107,7 +96,7 @@ module.exports = {
   editPage: function(req, res, next) {
     var id = req.params.id;
 
-    blogDao.findOne(id, function(err, blog) {
+    blogService.findOne(id, function(err, blog) {
       if(err) {
         return res.render('error');
       }
@@ -132,7 +121,7 @@ module.exports = {
   detailPage: function(req, res, next) {
     var id = req.params.id;
 
-    blogDao.findOne(id, function(err, blog) {
+    blogService.findOne(id, function(err, blog) {
       if(err) {
         return res.render('error');
       }

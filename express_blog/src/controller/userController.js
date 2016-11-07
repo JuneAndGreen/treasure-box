@@ -1,6 +1,6 @@
 var crypto = require('crypto');
 
-var userDao = require('../dao/userDao');
+var userService = require('../dao/userService');
 var _ = require('../util/api');
 
 module.exports = {
@@ -18,27 +18,19 @@ module.exports = {
       return res.send(_.resPkg('PARAMERR'));
     }
 
-    // 密码加密
-    ret.data.password = crypto.createHash('md5').update(ret.data.password).digest('hex');
-
-    userDao.findOne(ret.data.username, function(err, user) {
+    userService.register(ret.data, function(err, user) {
       if(err) {
         return res.send(_.resPkg('PARAMERR'));
       }
 
-      if(user) {
+      if(err === 'USEREXISTS') {
         return res.send(_.resPkg('USEREXISTS'));
       }
 
-      userDao.add(ret.data, function(err, user) {
-        if(err) {
-          return res.send(_.resPkg('PARAMERR'));
-        }
 
-        req.session.username = user.username; // 存储session
-        delete user.password;
-        res.send(_.resPkg('SUCCESS', user));
-      });
+      req.session.username = user.username; // 存储session
+      delete user.password;
+      res.send(_.resPkg('SUCCESS', user));
     });
   },
   /**
@@ -55,19 +47,16 @@ module.exports = {
       return res.send(_.resPkg('PARAMERR'));
     }
 
-    userDao.findOne(ret.data.username, function(err, user) {
+    userService.findOne(ret.data.username, function(err, user) {
       if(err) {
         return res.send(_.resPkg('PARAMERR'));
       }
 
-      if(!user) {
+      if(err === 'USERNOTEXISTS') {
         return res.send(_.resPkg('USERNOTEXISTS'));
       }
 
-      // 密码加密
-      ret.data.password = crypto.createHash('md5').update(ret.data.password).digest('hex');
-
-      if(user.password !== ret.data.password) {
+      if(err === 'PWDERR') {
         return res.send(_.resPkg('PWDERR'));
       }
 
