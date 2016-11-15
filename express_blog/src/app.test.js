@@ -5,8 +5,8 @@ var express = require('express');
 var app = express();
 
 // router
-app.use('/', function(req, res, next) {
-    res.end('hello world!');
+app.get('/', function(req, res, next) {
+  res.end('hello world!');
 });
 
 // app start
