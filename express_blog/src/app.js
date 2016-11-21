@@ -5,6 +5,8 @@ var ejs = require('ejs');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var bodyParser = require('body-parser');
+var morgan = require('morgan');
+var fileStreamRotator = require('file-stream-rotator');
 
 var filter = require('./filter/sessionFilter');
 var router = require('./controller/router');
@@ -32,6 +34,16 @@ app.use(session({
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({extended: false}));
+
+// use logs
+app.use(morgan('combined', {
+	stream: fileStreamRotator.getStream({
+    date_format: 'YYYY-MM-DD',
+    filename: path.join(__dirname, '../logs/', 'blog_%DATE%.log'),
+    frequency: 'daily',
+    verbose: true
+	})
+}));
 
 // filter
 app.use('/', filter);

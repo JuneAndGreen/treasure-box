@@ -1,4 +1,4 @@
-var blogService = require('../dao/blogService');
+var blogService = require('../service/blogService');
 var _ = require('../util/api');
 
 module.exports = {
