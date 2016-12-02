@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo</title>
+</head>
+<body>
+
+	<script type="text/javascript" src="../modules_require.js"></script>
+	<script type="text/javascript">
+		define(['./a.js', './c.js'], function(a, c) {
+			a.a();
+			c.c();
+		});
+	</script>
+</body>
+</html>
