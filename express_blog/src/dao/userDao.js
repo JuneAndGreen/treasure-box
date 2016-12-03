@@ -11,6 +11,7 @@ module.exports = {
 
 			var insertId = rows.insertId;
 			that.findOne(insertId, function(err, user) {
+				if(err) console.error(err.stack);
 				callback(err, user);
 			});
 		});
@@ -20,6 +21,7 @@ module.exports = {
 	 */
 	findOne: function(username, callback) {
 		query('SELECT * FROM user WHERE username=?', [username], function(err, rows) {
+			if(err) console.error(err.stack);
 			callback(err, rows&&rows[0]);
 		});
 	}

@@ -47,7 +47,7 @@ module.exports = {
       return res.send(_.resPkg('PARAMERR'));
     }
 
-    userService.login(ret.data.username, function(err, user) {
+    userService.login(ret.data, function(err, user) {
       if(err) {
         return res.send(_.resPkg('PARAMERR'));
       }

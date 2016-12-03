@@ -36,8 +36,10 @@
 							<% blogs.forEach(function(blog) { %>
 						  <li class="list-group-item">
 						  	<a href="/blog/<%= blog.id %>"><span class="my-blog_title"><%= blog.title %></span></a>
+						  	<% if(blog.username === username) { %>
 						  	<a href="/edit/<%= blog.id %>"><span class="glyphicon glyphicon-edit"></span></a>
 						  	<a href="/api/del?id=<%= blog.id %>"><span class="glyphicon glyphicon-remove-sign"></span></a>
+						  	<% } %>
 						  </li>
 						  <% }); %>
 						</ul>

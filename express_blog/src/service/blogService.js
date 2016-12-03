@@ -46,8 +46,8 @@ module.exports = {
   /**
    * 查
    */
-  findAllByUsername: function(username, callback) {
-    blogDao.findAllByUsername(username, callback);
+  findAll: function(callback) {
+    blogDao.findAll(callback);
   },
   findOne: function(id, callback) {
     blogDao.findOne(id, callback);

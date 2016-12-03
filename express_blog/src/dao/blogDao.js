@@ -8,12 +8,13 @@ module.exports = {
 		var that = this;
 
 		query('INSERT INTO blog(title, username, content) VALUES (?, ?, ?)', [blog.title, blog.username, blog.content], function(err, rows) {
-			if(err) return callback(err);
+			if(err) {
+				console.error(err.stack);
+				return callback(err);
+			}
 
 			var insertId = rows.insertId;
-			that.findOne(insertId, function(err, blog) {
-				callback(err, blog);
-			});
+			that.findOne(insertId, callback);
 		});
 	},
 	/**
@@ -21,6 +22,7 @@ module.exports = {
 	 */
 	del: function(id, callback) {
 		query('DELETE FROM blog WHERE id=?', [id], function(err, rows) {
+			if(err) console.error(err.stack);
 			callback(err, rows);
 		});
 	},
@@ -31,23 +33,26 @@ module.exports = {
 		var that = this;
 
 		query('UPDATE blog SET title=?, content=? WHERE id=?', [blog.title, blog.content, blog.id], function(err, rows) {
-			if(err) return callback(err);
+			if(err) {
+				console.error(err.stack);
+				return callback(err);
+			}
 
-			that.findOne(blog.id, function(err, blog) {
-				callback(err, blog);
-			});
+			that.findOne(blog.id, callback);
 		});
 	},
 	/**
 	 * 查
 	 */
-	findAllByUsername: function(username, callback) {
-		query('SELECT * FROM blog WHERE username=?', [username], function(err, rows) {
+	findAll: function(callback) {
+		query('SELECT * FROM blog', [], function(err, rows) {
+			if(err) console.error(err.stack);
 			callback(err, rows);
 		});
 	},
 	findOne: function(id, callback) {
 		query('SELECT * FROM blog WHERE id=?', [id], function(err, rows) {
+			if(err) console.error(err.stack);
 			callback(err, rows&&rows[0]);
 		});
 	}

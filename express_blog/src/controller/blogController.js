@@ -77,16 +77,14 @@ module.exports = {
    * 首页
    */
   indexPage: function(req, res, next) {
-    // 获取用户名 
-    var username = req.session.username;
-
-    blogService.findAllByUsername(username, function(err, blogs) {
+    blogService.findAll(function(err, blogs) {
       if(err) {
         return res.render('error');
       }
 
       res.render('index', {
-        blogs: blogs
+        blogs: blogs,
+        username: req.session.username
       });
     });
   },
