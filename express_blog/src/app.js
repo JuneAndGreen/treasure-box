@@ -1,4 +1,5 @@
 var path = require('path');
+var fs = require('fs');
 
 var express = require('express');
 var ejs = require('ejs');
@@ -36,6 +37,12 @@ app.use(session({
 app.use(bodyParser.urlencoded({extended: false}));
 
 // use logs
+var logsDir = path.join(__dirname, '../logs/');
+try {
+  fs.accessSync(logsDir);
+} catch(err) {
+  fs.mkdirSync(logsDir); // create logs dir
+}
 app.use(morgan('combined', {
 	stream: fileStreamRotator.getStream({
     date_format: 'YYYY-MM-DD',
