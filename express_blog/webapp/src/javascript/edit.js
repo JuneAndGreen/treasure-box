@@ -54,6 +54,6 @@ $(document).ready(function() {
   });
 
   $('#logout').click(function() {
-    location.href = '/api/logout';
+    location.href = '/logout';
   });
 });

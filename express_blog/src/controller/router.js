@@ -6,8 +6,8 @@ var userController = require('./userController');
 var router = express.Router();
 
 router.get('/login', userController.loginPage);
+router.get('/logout', userController.logout);
 router.post('/api/login', userController.login);
-router.get('/api/logout', userController.logout);
 router.post('/api/register', userController.register);
 
 router.get('/', blogController.indexPage);
