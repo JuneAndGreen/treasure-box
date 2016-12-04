@@ -17,8 +17,10 @@ var app = express();
 // static path
 app.use(express.static(path.join(__dirname, '../webapp/')));
 
-// view engine
+// view path
 app.set('views', path.join(__dirname, './views/'));
+
+// view engine
 app.set('view engine', 'ejs');
 app.engine('ejs', ejs.renderFile);
 
