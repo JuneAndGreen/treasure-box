@@ -1,5 +1,3 @@
-var crypto = require('crypto');
-
 var userService = require('../service/userService');
 var _ = require('../util/api');
 
