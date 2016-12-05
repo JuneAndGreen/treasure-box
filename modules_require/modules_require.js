@@ -1,9 +1,9 @@
 (function() {
 	
-	var MODULES = []; // 存放定义的模块
-	var STATUS = {}; // 模块状态
-	var RESULTS = {}; // 模块回调返回的结果
-	var STACK = []; // 当前模块调用栈
+	var MODULES = []; // 存放涉及到的所有模块的信息，包含每个模块的url、依赖和回调
+	var STATUS = {}; // 模块的状态
+	var RESULTS = {}; // 模块的回调返回的结果
+	var STACK = []; // 当前待加载的模块栈
 
 	var seed = +new Date();
 
