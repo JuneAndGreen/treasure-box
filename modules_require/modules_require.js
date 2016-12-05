@@ -14,56 +14,56 @@
 	/*
 	 * 格式化地址，取绝对路径
 	 */
-	var formatURI = (function() {
+	var formatURL = (function() {
 		var a = document.createElement('a');
 		a.style.display = 'none';
 		document.body.appendChild(a);
 
 		// 相对路径转绝对路径
-		var getAbsoluteURI = function(uri) {
+		var getAbsoluteURL = function(url) {
 			// 利用浏览器特性，通过使用a标签来获取绝对路径
-			a.href = uri;
+			a.href = url;
 			return a.href;
 		};
 
-		return function(uri, base) {
-			if(!uri) return '';
+		return function(url, base) {
+			if(!url) return '';
 
-			if(uri.indexOf('://') > 0) return getAbsoluteURI(uri); // 已经是绝对路径的情况
+			if(url.indexOf('://') > 0) return getAbsoluteURL(url); // 已经是绝对路径的情况
 			
-			if(base && uri.indexOf('.') == 0) uri = base.replace(/[^\/]*$/, '') + uri; // 以.开始的相对路径，则获取uri路径的上一级，再补在相对路径前面
+			if(base && url.indexOf('.') == 0) url = base.replace(/[^\/]*$/, '') + url; // 以.开始的相对路径，则获取url路径的上一级，再补在相对路径前面
 			
-			return getAbsoluteURI(uri); // 格式化成绝对路径
+			return getAbsoluteURL(url); // 格式化成绝对路径
 		};
 	})();
 
 	/**
 	 * 处理模块进入加载队列
 	 */
-	var runLoading = function(uri, deps, callback) {
-		// 如果自身是内嵌脚本的话，则使用时间戳作为uri
-		if(typeof uri !== 'string') {
+	var runLoading = function(url, deps, callback) {
+		// 如果自身是内嵌脚本的话，则使用时间戳作为url
+		if(typeof url !== 'string') {
 			callback = deps;
-			deps = uri;
+			deps = url;
 
-			uri = './' + (seed++) + '.js'
+			url = './' + (seed++) + '.js'
 		}
 
-		uri = formatURI(uri);
+		url = formatURL(url);
 
-		if(STATUS[uri] === DEFINED) return; // 已定义
+		if(STATUS[url] === DEFINED) return; // 已定义
 
 		// 加载依赖模块
 		for(var i=0,l=deps.length; i<l; i++) {
-			deps[i] = formatURI((deps[i] || ''), uri); // 格式化依赖列表中的uri
+			deps[i] = formatURL((deps[i] || ''), url); // 格式化依赖列表中的url
 			loadResource(deps[i]); // 加载资源
 		}
 
-		STATUS[uri] = WAITING; // 存在依赖，当前模块标记为等待中
+		STATUS[url] = WAITING; // 存在依赖，当前模块标记为等待中
 
 		// 放进待加载队列中
 		MODULES.push({
-			uri: uri,
+			url: url,
 			deps: deps,
 			callback: callback
 		});
@@ -78,8 +78,8 @@
 	var runWaiting = (function() {
 		// 检查所有文件是否都载入
 		var isFinishLoaded = function() {
-			for(var uri in STATUS) {
-				if(STATUS[uri] === LOADING) return false;
+			for(var url in STATUS) {
+				if(STATUS[url] === LOADING) return false;
 			}
 
 			return true;
@@ -100,7 +100,7 @@
 			for(var i=MODULES.length-1; i >= 0; ) {
 				var item = MODULES[i];
 
-				if(STATUS[item.uri] !== DEFINED) {
+				if(STATUS[item.url] !== DEFINED) {
 					if(!isListLoaded(item.deps)) {
 						// 存在未定义的文件，且依赖列表中也存在未定义的文件，则跳过
 						i--;
@@ -145,7 +145,7 @@
 			var result = item.callback.apply(window, args) || {};
 
 			// 合并依赖注入结果		
-			var ret = RESULTS[item.uri] || {};
+			var ret = RESULTS[item.url] || {};
 			if(typeof result === 'object') {
 			for(var key in result) 
 				ret[key] = result[key];
@@ -154,10 +154,10 @@
 			}
 
 			// 将定义好的文件放入缓存
-			RESULTS[item.uri] = ret;
+			RESULTS[item.url] = ret;
 		}
 
-		STATUS[item.uri] = DEFINED;
+		STATUS[item.url] = DEFINED;
 	};
 
 
@@ -167,20 +167,20 @@
 	var loadResource = (function() {
 
 		// 载入依赖文本
-		var loadText = function(uri, callback) {
-			if(!uri) return;
+		var loadText = function(url, callback) {
+			if(!url) return;
 			// 未加载过
-			if(STATUS[uri] != null) return;
+			if(STATUS[url] != null) return;
 			// 加载文本
-			STATUS[uri] = LOADING; // 标记为加载中
+			STATUS[url] = LOADING; // 标记为加载中
 			var xhr = new window.XMLHttpRequest();
 
 			xhr.onreadystatechange = function() {
 				if(xhr.readyState == 4) {
 					var text = xhr.responseText || '';
 
-					STATUS[uri] = DEFINED; // 标记为已定义
-					RESULTS[uri] = text; // 储存结果
+					STATUS[url] = DEFINED; // 标记为已定义
+					RESULTS[url] = text; // 储存结果
 
 					if(callback) callback(text); // 针对json的处理
 
@@ -189,23 +189,23 @@
 				}
 			};
 
-			xhr.open('GET', uri, true);
+			xhr.open('GET', url, true);
 			xhr.send(null);
 		};
 
 		// 载入依赖JSON
-		var loadJSON = function(uri) {
-			loadText(uri, function(text) {
+		var loadJSON = function(url) {
+			loadText(url, function(text) {
 				// 解析JSON
-				RESULTS[uri] = JSON.parse(text);
+				RESULTS[url] = JSON.parse(text);
 			});
 		};
 
 		// 载入依赖脚本
-		var loadScript = function(uri) {			
-			if(STATUS[uri]) return; // 已加载则返回
+		var loadScript = function(url) {			
+			if(STATUS[url]) return; // 已加载则返回
 			
-			STATUS[uri] = LOADING; // 标记当前模块为加载中
+			STATUS[url] = LOADING; // 标记当前模块为加载中
 
 			// 使用script标签添加到文档中，加载运行完再删除
 			var script = document.createElement('script');
@@ -216,17 +216,17 @@
 
 			addScriptListener(script); // 监听脚本加载运行
 
-			script.src = uri;
+			script.src = url;
 			(document.getElementsByTagName('head')[0] || document.body).appendChild(script);
 		};
 
-		return function(uri) {
-			var arr = uri.split('.');
+		return function(url) {
+			var arr = url.split('.');
 			var type = arr.pop();
 
-			if(type === 'js') loadScript(uri);
-			else if(type === 'json') loadJSON(uri);
-			else loadText(uri);
+			if(type === 'js') loadScript(url);
+			else if(type === 'json') loadJSON(url);
+			else loadText(url);
 		};
 	})();
 
@@ -236,18 +236,18 @@
 	var addScriptListener = (function() {
 		// 脚本载入完成回调
 		var onScriptLoad = function(script) {
-			var uri = formatURI(script.src);
-			if(!uri) return;
+			var url = formatURL(script.src);
+			if(!url) return;
 
 			// 检查栈中缓存
 			var arr = STACK.pop();
 			if(arr) {
-				arr.unshift(uri);
+				arr.unshift(url);
 				runLoading.apply(window, arr);
 			}
 
 			// 当前模块不处于等待中的话，则标记为已定义
-			if(STATUS[uri] !== WAITING)  STATUS[uri] = DEFINED;
+			if(STATUS[url] !== WAITING)  STATUS[url] = DEFINED;
 
 			// 清理脚本节点
 			if(script && script.parentNode) {
