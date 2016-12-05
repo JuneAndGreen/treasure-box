@@ -253,7 +253,6 @@
 			if(script && script.parentNode) {
 				// 清除事件
 				script.onload = script.onerror = null;
-				script.onreadystatechange = null;
 				// 清除script标签
 				script.parentNode.removeChild(script);
 			}
