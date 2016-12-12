@@ -4,7 +4,8 @@
   <title>test</title>
 </head>
 <body>
-
+  <div id="a"></div>
+  <div id="b"></div>
 
   <textarea id="tpl" style="display: none;">
     <ul>
@@ -27,9 +28,11 @@
     </div>
   </textarea>
 
-  <script type="text/javascript" src="../src/tpl.js"></script>
+  <script type="text/javascript" src="../tpl.js"></script>
   <script type="text/javascript">
-    var html = window.parse(document.getElementById('tpl').innerText, {
+    var template = document.getElementById('tpl').innerText;
+
+    var data = {
       clist: [
         {flag: 1, name: 'aa'},
         {flag: 2, name: 'bb'},
@@ -39,13 +42,18 @@
         {flag: 3, name: 'ff'}
       ],
       html: '<div style="color: red;">red</div>'
-    }, {
+    };
+
+    var filter = {
       addNum: function(str, num, add) {
         return add ? str + num + add : str + num;
       }
-    });
+    };
 
-    document.write(html);
+    document.getElementById('a').innerHTML = window.tpl.generate(template, data, filter);
+
+    var htmlFunc = window.tpl.parse(template);
+    document.getElementById('b').innerHTML = htmlFunc(data, filter);
   </script>
 </body>
 </html>

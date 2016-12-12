@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>test</title>
+</head>
+<body>
+  <div id="a"></div>
+  <div id="b"></div>
+
+  <script type="text/javascript" src="../tpl.js"></script>
+  <script type="text/javascript">
+    var template = '<div>${content|concatFilter:\'01\'}</div>';
+
+    var data = {
+      content: 'june'
+    };
+
+    var filter = {
+      concatFilter: function(str1, str2) {
+        return str1 + str2;
+      }
+    };
+
+    document.getElementById('a').innerHTML = window.tpl.generate(template, data, filter);
+
+    var htmlFunc = window.tpl.parse(template);
+    document.getElementById('b').innerHTML = htmlFunc(data, filter);
+  </script>
+</body>
+</html>
