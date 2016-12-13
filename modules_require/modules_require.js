@@ -264,7 +264,7 @@
 		return function(script) {
 			// 加载成功 或 失败
 			script.onload = script.onerror = function(e) {
-				onScriptLoad(e.target || e.srcElement);
+				onScriptLoad(e.target || e.srcElement || this);
 			};
 		};
 	})();
