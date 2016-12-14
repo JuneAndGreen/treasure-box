@@ -61,7 +61,7 @@
 
 		STATUS[url] = WAITING; // 存在依赖，当前模块标记为等待中
 
-		// 放进待加载队列中
+		// 放进模块队列中
 		MODULES.push({
 			url: url,
 			deps: deps,
