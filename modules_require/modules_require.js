@@ -38,7 +38,7 @@
 	})();
 
 	/**
-	 * 处理模块进入加载队列
+	 * 处理模块进入等待队列
 	 */
 	var runLoading = function(url, deps, callback) {
 		// 如果自身是内嵌脚本的话，则使用时间戳作为url
