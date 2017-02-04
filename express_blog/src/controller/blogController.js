@@ -44,7 +44,6 @@ module.exports = {
 
     blogService.update(ret.data, function(err, blog) {
       if(err) {
-        console.log(err.stack);
         return res.send(_.resPkg('PARAMERR'));
       }
 

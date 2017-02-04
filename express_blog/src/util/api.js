@@ -1,4 +1,37 @@
+var winston = require('winston');
+var path = require('path');
+var fs = require('fs');
+
+var logsDir = path.join(__dirname, '../logs/');
+try {
+  fs.accessSync(logsDir);
+} catch(err) {
+  fs.mkdirSync(logsDir); // create logs dir
+}
+var logger = new (winston.Logger)({
+  transports: [
+    new (winston.transports.Console)(),
+    new (require('winston-daily-rotate-file'))({ 
+      filename: path.join(__dirname, '../../logs/', '_blog.log'),
+      datePattern: 'yyyy-MM-dd',
+      prepend: true
+    })
+  ]
+});
+
 module.exports = {
+  /**
+   * 日志相关api
+   */
+  log: function() {
+    logger.info.apply(logger, arguments);
+  },
+  warn: function() {
+    logger.warn.apply(logger, arguments);
+  },
+  error: function() {
+    logger.error.apply(logger, arguments);
+  },
   /**
    * 验证数据
    */

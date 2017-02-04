@@ -48,7 +48,7 @@ try {
 app.use(morgan('combined', {
 	stream: fileStreamRotator.getStream({
     date_format: 'YYYY-MM-DD',
-    filename: path.join(__dirname, '../logs/', 'blog_%DATE%.log'),
+    filename: path.join(__dirname, '../logs/', 'blog_request_%DATE%.log'),
     frequency: 'daily',
     verbose: true
 	})
