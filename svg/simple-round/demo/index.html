@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>demo</title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background: #222428;
+            }
+
+            #round {
+                position: absolute;
+                width: 450px;
+                height: 450px;
+                top: 120px;
+                left: 50%;
+                margin: 0 0 0 -225px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="round"></div>
+        <script src="../simple-round.js"></script>
+        <script>
+            new Round(document.getElementById('round'), {
+                size: 6,
+                data: [
+                    '#2C3E50',
+                    '#FC4349',
+                    '#6DBCDB',
+                    '#F7E248',
+                    '#D7DADB',
+                    '#FFF'
+                ]
+            });
+        </script>
+    </body>
+</html>
