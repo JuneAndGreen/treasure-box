@@ -5,9 +5,8 @@
 </head>
 <body>
   <div id="a"></div>
-  <div id="b"></div>
 
-  <script type="text/javascript" src="../tpl.js"></script>
+  <script type="text/javascript" src="../src/tpl.js"></script>
   <script type="text/javascript">
     var template = '<div>${content|concatFilter:\'01\'}</div>';
 
@@ -21,10 +20,7 @@
       }
     };
 
-    document.getElementById('a').innerHTML = window.tpl.generate(template, data, filter);
-
-    var htmlFunc = window.tpl.parse(template);
-    document.getElementById('b').innerHTML = htmlFunc(data, filter);
+    document.getElementById('a').innerHTML = window.parse(template, data, filter);
   </script>
 </body>
 </html>
