@@ -28,14 +28,17 @@
         <script src="../simple-round.js"></script>
         <script>
             new Round(document.getElementById('round'), {
-                size: 6,
+                radius: 250, // 半径
+                strokeColor: '#fff', // 边界颜色
+                strokeWidth: 4, // 边界宽度
+                roundWidth: 200, // 圆环宽度
                 data: [
-                    '#2C3E50',
-                    '#FC4349',
-                    '#6DBCDB',
-                    '#F7E248',
-                    '#D7DADB',
-                    '#FFF'
+                    { value: 12, color: '#2C3E50'}, // value - 扇形值，color - 扇形颜色
+                    { value: 22, color: '#FC4349'},
+                    { value: 42, color: '#6DBCDB'},
+                    { value: 12, color: '#F7E248'},
+                    { value: 2, color: '#D7DADB'},
+                    { value: 55, color: '#000'},
                 ]
             });
         </script>

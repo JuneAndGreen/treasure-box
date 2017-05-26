@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>demo</title>
+    <style type="text/css">
+        #thumb, #info {
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+
+            background-color: #7be7ae;
+        }
+
+        #info {
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="thumb"></div>
+    <div id="info"></div>
+
+    <script type="text/javascript" src="../mouse_event.js"></script>
+    <script type="text/javascript">
+        let info = document.getElementById('info');
+
+        new MouseEvent(document.getElementById('thumb'), {
+            dblclickInterval: 300, // 双击间隔判断
+            longclickDuration: 500, // 长点击时间判断
+
+            click(obj) {
+                // 单击事件
+                console.log('dispatch event click, element : ' + obj.source);
+                console.log('event : ', obj.evt);
+                info.innerHTML += '<br>click';
+                info.scrollTop = info.scrollHeight;
+            },
+
+            mousedown(obj) {
+                // 鼠标按下事件
+                console.log('dispatch event mousedown, element : ' + obj.source);
+                console.log('event : ', obj.evt);
+                info.innerHTML += '<br>mousedown';
+                info.scrollTop = info.scrollHeight;
+            },
+
+            mouseup(obj) {
+                // 鼠标放开事件
+                console.log('dispatch event mouseup, element : ' + obj.source);
+                console.log('event : ', obj.evt);
+                info.innerHTML += '<br>mouseup';
+                info.scrollTop = info.scrollHeight;
+            },
+
+            mousemove(obj) {
+                // 鼠标移动事件
+                console.log('dispatch event mousemove, element : ' + obj.source);
+                console.log('event : ', obj.evt);
+                // info.innerHTML += '<br>mousemove';
+                info.scrollTop = info.scrollHeight;
+            },
+
+            mouseenter(obj) {
+                // 鼠标进入事件
+                console.log('dispatch event mouseenter, element : ' + obj.source);
+                console.log('event : ', obj.evt);
+                info.innerHTML += '<br>mouseenter';
+                info.scrollTop = info.scrollHeight;
+            },
+
+            mouseleave(obj) {
+                // 鼠标离开事件
+                console.log('dispatch event mouseleave, element : ' + obj.source);
+                console.log('event : ', obj.evt);
+                info.innerHTML += '<br>mouseleave';
+                info.scrollTop = info.scrollHeight;
+            },
+
+            mouseover(obj) {
+                // 鼠标悬浮在元素上事件
+                console.log('dispatch event mouseover, element : ' + obj.source);
+                console.log('event : ', obj.evt);
+                info.innerHTML += '<br>mouseover';
+                info.scrollTop = info.scrollHeight;
+            },
+
+            dblclick(obj) {
+                // 双击事件
+                console.log('dispatch event dblclick, element : ' + obj.source);
+                console.log('event : ', obj.evt);
+                info.innerHTML += '<br>dblclick';
+                info.scrollTop = info.scrollHeight;
+            },
+
+            drag(obj) {
+                // 拖拽事件
+                console.log('dispatch event drag, element : ' + obj.source);
+                console.log('event : ', obj.evt);
+                info.innerHTML += '<br>drag';
+                info.innerHTML += '<br>drag - dragX : ' + obj.dragX; // 横坐标拖拽偏移
+                info.innerHTML += '<br>drag - dragY : ' + obj.dragY; // 纵坐标拖拽偏移
+                info.scrollTop = info.scrollHeight;
+            },
+
+            longclick(obj) {
+                // 长点击事件
+                console.log('dispatch event longclick, element : ' + obj.source);
+                console.log('event : ', obj.evt);
+                info.innerHTML += '<br>longclick';
+                info.scrollTop = info.scrollHeight;
+            },
+
+            longclickstart(obj) {
+                // 长点击开始事件
+                console.log('dispatch event longclickstart, element : ' + obj.source);
+                console.log('event : ', obj.evt);
+                info.innerHTML += '<br>longclickstart';
+                info.scrollTop = info.scrollHeight;
+            },
+
+            swipe(obj) {
+                // 滑动事件
+                console.log('dispatch event swipe, element : ' + obj.source);
+                console.log('event : ', obj.evt);
+                info.innerHTML += '<br>swipe';
+                info.innerHTML += '<br>swip - direction : ' + obj.direction; // 滑动方向，值为left/right/top/bottom
+                info.scrollTop = info.scrollHeight;
+            },
+        })
+    </script>
+</body>
+</html>

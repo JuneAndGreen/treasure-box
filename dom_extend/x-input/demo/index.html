@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>demo</title>
+    <style type="text/css">
+        #cnt {
+            width: 500px;
+            height: 300px;
+            margin: 150px auto;
+        }
+
+        input {
+            display: block;
+            width: 150px;
+            height: 30px;
+            margin-top: 10px;
+            padding: 10px;
+
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="cnt">
+        <input id="ipt-1" type="text" value="1">
+        <input id="ipt-2" type="text" value="1">
+        <input id="ipt-3" type="text" value="1">
+    </div>
+
+    <script type="text/javascript" src="../x-input.js"></script>
+    <script type="text/javascript">
+        /**
+         * 当拖拽输入框、按下键盘上下键可触发值的变动
+         */
+        new XInput(document.getElementById('ipt-1'), {
+            min: 0, // 最小值
+            max: 20, // 最大值
+            gap: 3, // 发生变动时的拖拽距离
+            step: 1, // 每次变动的值大小
+            float: false, // 是否支持浮点数
+            accuracy: 2, // 当支持浮点数时，需要保留的小数位数
+            times: 10, // 当按住shift键进行鼠标拖拽或者按下键盘上下键时，每次变动的值大小需要乘以此值。
+        });
+
+        new XInput(document.getElementById('ipt-2'), {
+            min: 0,
+            max: 1,
+            step: 0.01,
+            float: true,
+            accuracy: 2,
+        });
+
+        new XInput(document.getElementById('ipt-3'), {
+            min: 0,
+            max: 1000000000,
+            step: 1,
+            times: 100,
+        });
+    </script>
+</body>
+</html>
