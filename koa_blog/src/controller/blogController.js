@@ -33,7 +33,7 @@ module.exports = {
       if(!val) {
         this.body = resPkg('PARAMERR');
       } else {
-        let blog = service.update(data, {id: data.id})[0];
+        let blog = yield service.update(data, {id: data.id})[0];
         this.body = resPkg('SUCCESS', blog);
       }
     },
@@ -45,7 +45,7 @@ module.exports = {
       if(!id && isNaN(id)) {
         this.body = resPkg('PARAMERR');
       } else {
-        let blog = service.delete({id: id});
+        let blog = yield service.delete({id: id});
         this.body = resPkg('SUCCESS', blog);
       }
     }

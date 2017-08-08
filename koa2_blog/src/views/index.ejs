@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="/src/css/index.css">
+        <link rel="stylesheet" type="text/css" href="/res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- 导航栏 -->
+        <div class="m-nav">
+            <!-- logo -->
+            <div class="logo">
+                <span>JUNE</span>
+            </div>
+            <!-- 已登录 -->
+            <div class="infocnt">
+                <img src="/res/img/head.jpg">
+                <div class="name"><%= username %></div>
+                <button type="button" class="u-btn u-btn-1 j-logout">登出</button>
+            </div>
+            <!-- 未登录 -->
+            <div class="infocnt f-dn">
+                <button type="button" class="u-btn u-btn-1">登录</button>
+                <button type="button" class="u-btn u-btn-1">注册</button>
+            </div>
+            <!-- tab区 -->
+            <ul class="topcnt j-tablist">
+                <li><a class="j-blogtab act" href="#bloglist">
+                    <i class="icon-file-alt"></i><span>博客</span>
+                </a></li>
+                <li><a class="j-searchtab" href="#search">
+                    <i class="icon-search"></i><span>搜索</span>
+                </a></li>
+            </ul>
+            <!-- 网站信息 -->
+            <div class="website">
+                <div class="itm">TEL：XXXXXX</div>
+                <div class="itm">作者：JUNE_01</div>
+            </div>
+        </div>
+
+        <!-- 博客编辑区 -->
+        <div class="g-cnt j-page m-edit f-dn">
+            <!-- 顶部 -->
+            <div class="m-head">
+                <div class="bread">
+                    <a href="#bloglist"><%= username %></a>&nbsp;&nbsp;&lt;&nbsp;&nbsp;<a href="#bloglist">博客</a>
+                </div>
+            </div>
+            <!-- 正文 -->
+            <!-- 博客正文 -->
+            <div class="scrocnt">
+                <div class="cnt">
+                    <form class="j-blog_form" onsubmit="return false;">
+                        <div class="u-ipts">
+                            <label class="lbt" for="name">标题：</label>
+                            <input type="text" name="name" class="ipt" maxlength="50">
+                        </div>
+                        <div class="u-ipts">
+                            <label class="lbt" for="type">类别：</label>
+                            <input type="text" name="type" class="ipt" maxlength="30">
+                        </div>
+                        <textarea class="u-textarea content" name="content"></textarea>
+                        <div class="btn_box">
+                            <button class="u-btn j-new_blog" type="button">提交</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- 博客内容区 -->
+        <div class="g-cnt j-page m-blog f-dn">
+            <!-- 顶部 -->
+            <div class="m-head">
+                <div class="bread">
+                    <a href="#bloglist"><%= username %></a>&nbsp;&nbsp;&lt;&nbsp;&nbsp;<a href="#bloglist">博客</a>
+                </div>
+            </div>
+            <!-- 正文 -->
+            <div class="blogcnt"></div>
+        </div>
+
+        <!-- 博客列表内容区 -->
+        <div class="g-cnt j-page m-bloglist"></div>
+
+        <!-- 搜索 -->
+        <div class="g-cnt j-page m-search f-dn">
+            <!-- 顶部 -->
+            <div class="m-head">
+                <div class="bread">
+                    <a href="#search">搜索</a>
+                </div>
+                <a class="combtn combtn-2" href="#edit">
+                    <i class="icon-pencil icon-2x"></i>
+                    <span>新建博客</span>
+                </a>
+            </div>
+            <!-- 正文 -->
+            <div class="scrocnt">
+                <div class="cnt">
+                    <div class="searchbox">
+                        <input type="text" class="u-ipt schipt j-search_ipt" />
+                        <button type="button" class="u-btn schbtn j-search_btn"><i class="icon-search"></i></button>
+                    </div>
+                    <div class="listcnt"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 评论 -->
+        <div class="m-comment f-dn">
+            <div class="mask"></div>
+            <div class="u-close close"><i class="icon-remove icon-2x"></i></div>
+            <div class="cnt">
+                <form class="comform">
+                    <textarea class="u-textarea"></textarea>
+                    <div class="iptinfo"><span class="now">15</span>&nbsp;/&nbsp;50</div>
+                    <button class="u-btn u-btn-2 btn" type="button">评论</button>
+                </form>
+                <ul class="list">
+                    <li>
+                        <p>
+                            <a href="#">june_01</a>回复<a href="#">green</a>：<span>你真的有够笨的！</span>
+                        </p>
+                        <div class="opr">2015-10-02&nbsp;21:44&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">回复</a></div>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="#">june_01</a>评论：<span>你真的有够笨的！你真的有够笨的！你真的有够笨的！你真的有够笨的！你真的有够笨的！</span>
+                        </p>
+                        <div class="opr">2015-10-02&nbsp;21:44&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">回复</a></div>
+                    </li>
+                </ul>
+                <div class="cominfo">当前第2页，共3页</div>
+                <div class="m-page">
+                    <a href="#" class="u-btn">GO!</a>
+                    <input type="text" class="u-ipt ipt" placeholder="页" />
+                    <a href="#" class="u-btn">下一页</a>
+                    <a href="#" class="u-btn">上一页</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 弹框 -->
+
+        <!-- 修改密码 -->
+        <div class="m-dialog f-dn">
+            <div class="mask"></div>
+            <div class="cnt">
+                <div class="u-close close"><i class="icon-remove icon-2x"></i></div>
+                <div class="logo"><h1>JUNE</h1><span>修改密码</span></div>
+                <form class="m-form">
+                    <input type="password" class="u-ipt ipt" placeholder="原密码" />
+                    <input type="password" class="u-ipt ipt" placeholder="新密码" />
+                    <input type="password" class="u-ipt ipt" placeholder="再次输入新密码" />
+                    <div class="err f-dn">
+                        <i class="icon-remove-sign"></i>
+                        <span>注册失败</span>
+                    </div>
+                    <button type="button" class="u-btn btn">修改密码</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- 用户资料 -->
+        <div class="m-dialog m-dialog-2 f-dn">
+            <div class="mask"></div>
+            <div class="cnt">
+                <div class="u-close close"><i class="icon-remove icon-2x"></i></div>
+                <div class="logo"><h1>JUNE</h1><span>用户资料</span></div>
+                <div class="userinfo">
+                    <div class="left">
+                        <div class="headimg">
+                            <img src="/res/img/head.jpg">
+                        </div>
+                        <div class="opr">
+                            <button class="u-btn btn" type="button">更换头像</button>
+                            <button class="u-btn btn" type="button">修改密码</button>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="u-ipts">
+                            <label class="lbt">用户名：</label>
+                            <div class="val">june_01</div>
+                        </div>
+                        <div class="u-ipts">
+                            <label class="lbt">邮箱：</label>
+                            <input class="ipt" type="text" placeholder="邮箱" />
+                        </div>
+                        <div class="u-ipts">
+                            <label class="lbt">性别：</label>
+                            <div class="radios">
+                                <label><input class="radio" type="radio" name="sex" checked /><span>男</span></label>
+                                <label><input class="radio" type="radio" name="sex" /><span>女</span></label>
+                            </div>
+                        </div>
+                        <div class="u-ipts u-ipts-2 f-dn">
+                            <label class="lbt">简介：</label>
+                            <textarea class="textarea" placeholder="描述"></textarea>
+                        </div>
+                        <div class="u-ipts u-ipts-2">
+                            <label class="lbt">简介：</label>
+                            <p>这是一个事关找寻理想找寻自我的故事，很多经典的片子都有这样的内核。往前一步，是《飞屋环游记》，为了梦想与爱情起步，结果是一个格外温馨的故事；或者往左一步，成为《大鱼</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="m-form f-dn">
+                    <input type="text" class="u-ipt ipt" placeholder="用户名" />
+                    <input type="password" class="u-ipt ipt" placeholder="密码" />
+                    <input type="password" class="u-ipt ipt" placeholder="再次输入密码" />
+                </form>
+                <div class="btns">
+                    <button type="button" class="u-btn btn">取消</button>
+                    <button type="button" class="u-btn btn">保存</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- confirm -->
+        <div class="m-dialog f-dn">
+            <div class="mask"></div>
+            <div class="cnt">
+                <div class="u-close close"><i class="icon-remove icon-2x"></i></div>
+                <div class="logo"><h1>JUNE</h1><span>删除</span></div>
+                <div class="content">你确认要删除么？</div>
+                <div class="btns">
+                    <button type="button" class="u-btn btn">确认</button>
+                    <button type="button" class="u-btn btn">取消</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 评论 -->
+        <div class="m-dialog f-dn">
+            <div class="mask"></div>
+            <div class="cnt">
+                <div class="u-close close"><i class="icon-remove icon-2x"></i></div>
+                <div class="logo"><h1>JUNE</h1><span>评论</span></div>
+                <div class="comment">
+                    <div class="iptinfo"><span class="now">15</span>&nbsp;/&nbsp;50</div>
+                    <textarea class="u-textarea textarea"></textarea>
+                </div>
+                <div class="btns">
+                    <button type="button" class="u-btn btn">评论</button>
+                </div>
+            </div>
+        </div>
+
+        <template id="t-bloglist" class="f-dn">
+            <!-- 顶部 -->
+            <div class="m-head">
+                <div class="bread">
+                    <a href="#bloglist"><%= username %></a>&nbsp;&nbsp;&lt;&nbsp;&nbsp;<a href="#bloglist">博客</a>
+                </div>
+                <a class="combtn combtn-2" href="#edit">
+                    <i class="icon-pencil icon-2x"></i>
+                    <span>新建博客</span>
+                </a>
+            </div>
+            <!-- 正文 -->
+            <div class="scrocnt">
+                <div class="cnt">
+                    <ul class="list">
+                        {list blist as it}
+                        <li>
+                            <h3 class="title">
+                                <a href="#blog&id=${it.id}">${it.name}</a>
+                                <!-- 作者权限 -->
+                                <div class="opr">
+                                    <a href="#edit&id=${it.id}" title="编辑"><i class="icon-edit"></i></a>
+                                    <a href="#" title="删除"><i class="icon-trash"></i></a>
+                                </div>
+                            </h3>
+                            <div class="info">发布时间：<span>${it.create_time}</span>&nbsp;&nbsp;|&nbsp;&nbsp;分类：${it.type}</div>
+                            <div class="content">${it.content}</div>
+                        </li>
+                        {/list}
+                    </ul>
+                    <div class="m-page">
+                        <a href="#" class="u-btn">GO!</a>
+                        <input type="text" class="u-ipt ipt" placeholder="页" />
+                        <a href="#" class="u-btn">下一页</a>
+                        <a href="#" class="u-btn">上一页</a>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="t-search" class="f-dn">
+            <div class="listbox">
+                <!-- 博客列表 -->
+                <ul class="list">
+                    {list blist as it}
+                    <li>
+                        <h3 class="title">
+                            <a href="#blog&id=${it.id}">${it.name}</a>
+                        </h3>
+                        <div class="info">作者：${it.username}&nbsp;&nbsp;|&nbsp;&nbsp;发布时间：<span>${it.create_time}</span>&nbsp;&nbsp;|&nbsp;&nbsp;分类：${it.type}</div>
+                        <div class="content">${it.content}</div>
+                    </li>
+                    {/list}
+                </ul>
+
+                <div class="m-page m-page-2">
+                    <a href="#" class="u-btn">GO!</a>
+                    <input type="text" class="u-ipt ipt" placeholder="页" />
+                    <a href="#" class="u-btn">下一页</a>
+                    <a href="#" class="u-btn">上一页</a>
+                </div>
+            </div>
+        </template>
+
+        <template id="t-blog" class="f-dn">
+            <!-- 博客正文 -->
+            <div class="scrocnt">
+                <div class="cnt">
+                    <h3 class="title">${name}</h3>
+                    <div class="opr">
+                        <span>分类：${type}</span>
+                    </div>
+                    <div class="info">作者：${username}&nbsp;&nbsp;|&nbsp;&nbsp;发布时间：<span>${create_time}</span></div>
+                    <div class="content">${content}</div>
+                </div>
+            </div>
+            <!-- 快捷按钮 -->
+            <ul class="m-link" data-id="${id}">
+                <!-- 作者权限 -->
+                {if user_id == myId}
+                <li data-action="edit"><span title="编辑">
+                    <i class="icon-edit icon-2x"></i>
+                </span></li>
+                <li data-action="del"><span title="删除">
+                    <i class="icon-trash icon-2x"></i>
+                </span></li>
+                <li data-action="new"><span title="新建">
+                    <i class="icon-pencil icon-2x"></i>
+                </span></li>
+                {/if}
+            </ul>    
+        </template>
+
+        <script type="text/javascript">
+            window.userId = "<%= userId %>";
+        </script>
+        <script type="text/javascript" src="/src/javascript/lib/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/src/javascript/normal/template.js"></script>
+        <script type="text/javascript" src="/src/javascript/normal/index.js"></script>
+    </body>
+</html>

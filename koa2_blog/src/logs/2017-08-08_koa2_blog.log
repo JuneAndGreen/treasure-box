@@ -1,0 +1,1079 @@
+[INFO][2017-8-8 13:17:23] -- running on port:3000
+[INFO][2017-8-8 13:17:37] --   <-- GET /
+[INFO][2017-8-8 13:17:37] --   --> GET / 302 10ms 43b
+[INFO][2017-8-8 13:17:37] --   <-- GET /login
+[ERROR][2017-8-8 13:17:37] -- Error: ENOENT: no such file or directory, open 'E:\private_workspace\treasure-box\koa2_blog\public\views\login.html'
+[INFO][2017-8-8 13:17:37] --   --> GET /login 200 2ms 143b
+[INFO][2017-8-8 13:17:37] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:17:37] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:67:31)
+    at process._tickCallback (internal/process/next_tick.js:109:7)
+[INFO][2017-8-8 13:19:30] -- running on port:3000
+[INFO][2017-8-8 13:19:31] --   <-- GET /login
+[ERROR][2017-8-8 13:19:31] -- Error: ENOENT: no such file or directory, open 'E:\private_workspace\treasure-box\koa2_blog\src\views\login.html'
+[INFO][2017-8-8 13:19:31] --   --> GET /login 200 18ms 140b
+[INFO][2017-8-8 13:19:32] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:19:32] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:19:52] -- running on port:3000
+[INFO][2017-8-8 13:19:54] --   <-- GET /login
+[INFO][2017-8-8 13:19:54] --   --> GET /login 200 21ms 2.32kb
+[INFO][2017-8-8 13:19:54] --   <-- GET /src/css/login.css
+[INFO][2017-8-8 13:19:54] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:19:54] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:19:54] --   <-- GET /src/javascript/normal/md5.js
+[ERROR][2017-8-8 13:19:54] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:19:54] --   <-- GET /src/javascript/normal/login.js
+[INFO][2017-8-8 13:19:54] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 7ms 21.57kb
+[INFO][2017-8-8 13:19:54] --   --> GET /src/javascript/normal/md5.js 200 8ms 7.36kb
+[INFO][2017-8-8 13:19:54] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 9ms 84.33kb
+[INFO][2017-8-8 13:19:54] --   --> GET /src/javascript/normal/login.js 200 6ms 2.19kb
+[INFO][2017-8-8 13:19:54] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:19:54] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 2ms 42.55kb
+[INFO][2017-8-8 13:19:54] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:19:54] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:20:00] --   <-- GET /src/css/login.css
+[INFO][2017-8-8 13:20:00] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[ERROR][2017-8-8 13:20:00] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:20:00] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 3ms 21.57kb
+[INFO][2017-8-8 13:20:01] --   <-- GET /login
+[INFO][2017-8-8 13:20:01] --   --> GET /login 200 4ms 2.32kb
+[INFO][2017-8-8 13:20:02] --   <-- GET /src/css/login.css
+[INFO][2017-8-8 13:20:02] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:20:02] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:20:02] --   <-- GET /src/javascript/normal/md5.js
+[INFO][2017-8-8 13:20:02] --   <-- GET /src/javascript/normal/login.js
+[ERROR][2017-8-8 13:20:02] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:20:02] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 7ms 21.57kb
+[INFO][2017-8-8 13:20:02] --   --> GET /src/javascript/normal/md5.js 200 6ms 7.36kb
+[INFO][2017-8-8 13:20:02] --   --> GET /src/javascript/normal/login.js 200 6ms 2.19kb
+[INFO][2017-8-8 13:20:02] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 7ms 84.33kb
+[INFO][2017-8-8 13:20:02] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:20:02] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 1ms 42.55kb
+[INFO][2017-8-8 13:20:02] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:20:02] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:32:06] -- running on port:3000
+[INFO][2017-8-8 13:32:09] --   <-- GET /login
+[INFO][2017-8-8 13:32:09] --   --> GET /login 200 25ms 2.32kb
+[INFO][2017-8-8 13:32:09] --   <-- GET /src/css/login.css
+[INFO][2017-8-8 13:32:09] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:32:09] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:32:09] --   <-- GET /src/javascript/normal/md5.js
+[INFO][2017-8-8 13:32:09] --   <-- GET /src/javascript/normal/login.js
+[INFO][2017-8-8 13:32:09] --   --> GET /src/css/login.css 200 14ms 8.36kb
+[INFO][2017-8-8 13:32:09] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 15ms 21.57kb
+[INFO][2017-8-8 13:32:09] --   --> GET /src/javascript/normal/md5.js 200 10ms 7.36kb
+[INFO][2017-8-8 13:32:09] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 11ms 84.33kb
+[INFO][2017-8-8 13:32:09] --   --> GET /src/javascript/normal/login.js 200 7ms 2.19kb
+[INFO][2017-8-8 13:32:09] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:32:09] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:35:04] --   <-- POST /api/login
+[INFO][2017-8-8 13:35:04] -- 执行sql语句：SELECT `user`.`id` , `user`.`username` , `user`.`password` , `user`.`email` , `user`.`head` , `user`.`description` , `user`.`sex` FROM `user` WHERE `user`.`username` = ?
+[INFO][2017-8-8 13:35:04] -- 参数：["10000"]
+[ERROR][2017-8-8 13:35:04] -- ParamIllegalError
+    at UserService.login (E:\private_workspace\treasure-box\koa2_blog\src\service\user.js:16:56)
+    at process._tickCallback (internal/process/next_tick.js:109:7)
+[INFO][2017-8-8 13:35:04] --   --> POST /api/login 200 102ms 45b
+[INFO][2017-8-8 13:35:04] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:35:04] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 3ms 42.55kb
+[INFO][2017-8-8 13:35:23] --   <-- POST /api/register
+[INFO][2017-8-8 13:35:23] -- 执行sql语句：SELECT `user`.`id` , `user`.`username` , `user`.`password` , `user`.`email` , `user`.`head` , `user`.`description` , `user`.`sex` FROM `user` WHERE `user`.`username` = ?
+[INFO][2017-8-8 13:35:23] -- 参数：["june_01"]
+[INFO][2017-8-8 13:35:23] -- 执行sql语句：INSERT INTO `user` ( `username` , `password` ) VALUES ( ? , ? )
+[INFO][2017-8-8 13:35:23] -- 参数：["june_01","e10adc3949ba59abbe56e057f20f883e"]
+[INFO][2017-8-8 13:35:23] -- 执行sql语句：SELECT `user`.`id` , `user`.`username` , `user`.`password` , `user`.`email` , `user`.`head` , `user`.`description` , `user`.`sex` FROM `user` WHERE `user`.`id` = ?
+[INFO][2017-8-8 13:35:23] -- 参数：[10004]
+[INFO][2017-8-8 13:35:23] --   --> POST /api/register 200 31ms 122b
+[INFO][2017-8-8 13:35:37] --   <-- GET /login
+[INFO][2017-8-8 13:35:37] --   --> GET /login 302 9ms 33b
+[INFO][2017-8-8 13:35:37] --   <-- GET /
+[INFO][2017-8-8 13:35:37] --   --> GET / 200 11ms 16.01kb
+[INFO][2017-8-8 13:35:37] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:35:37] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:35:37] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 4ms 21.57kb
+[INFO][2017-8-8 13:35:37] --   --> GET /src/css/index.css 200 6ms 17.87kb
+[INFO][2017-8-8 13:35:37] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:35:37] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 2ms 84.33kb
+[INFO][2017-8-8 13:35:37] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:35:37] --   --> GET /src/javascript/normal/template.js 200 3ms 4.36kb
+[INFO][2017-8-8 13:35:37] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:35:37] --   --> GET /src/javascript/normal/index.js 200 2ms 3.16kb
+[INFO][2017-8-8 13:35:37] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:35:37] --   --> GET /res/img/head.jpg 200 2ms 12.08kb
+[INFO][2017-8-8 13:35:37] --   <-- GET /api/blog
+[ERROR][2017-8-8 13:35:37] -- ReferenceError: query is not defined
+    at findList (E:\private_workspace\treasure-box\koa2_blog\src\controller\blog.js:43:9)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:42:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:150:11)
+[INFO][2017-8-8 13:35:37] --   --> GET /api/blog 200 3ms 48b
+[INFO][2017-8-8 13:35:37] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:35:37] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 2ms 42.55kb
+[INFO][2017-8-8 13:35:37] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:35:37] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:36:30] --   <-- GET /api/logout
+[ERROR][2017-8-8 13:36:30] -- TypeError: Cannot read property 'session' of undefined
+    at logout (E:\private_workspace\treasure-box\koa2_blog\src\controller\user.js:72:23)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:42:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:150:11)
+[INFO][2017-8-8 13:36:30] --   --> GET /api/logout 200 4ms 71b
+[INFO][2017-8-8 13:36:31] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:36:31] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:36:36] --   <-- GET /
+[INFO][2017-8-8 13:36:36] --   --> GET / 200 3ms 16.01kb
+[INFO][2017-8-8 13:36:36] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:36:36] --   --> GET /src/css/index.css 200 3ms 17.87kb
+[INFO][2017-8-8 13:36:36] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:36:36] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 1ms 21.57kb
+[INFO][2017-8-8 13:36:36] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:36:36] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 1ms 84.33kb
+[INFO][2017-8-8 13:36:36] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:36:36] --   --> GET /src/javascript/normal/template.js 200 3ms 4.36kb
+[INFO][2017-8-8 13:36:36] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:36:36] --   --> GET /src/javascript/normal/index.js 200 3ms 3.16kb
+[INFO][2017-8-8 13:36:36] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:36:36] --   --> GET /res/img/head.jpg 200 2ms 12.08kb
+[INFO][2017-8-8 13:36:36] --   <-- GET /api/blog
+[ERROR][2017-8-8 13:36:36] -- ReferenceError: query is not defined
+    at findList (E:\private_workspace\treasure-box\koa2_blog\src\controller\blog.js:43:9)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:42:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:150:11)
+[INFO][2017-8-8 13:36:36] --   --> GET /api/blog 200 3ms 48b
+[INFO][2017-8-8 13:36:36] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:36:36] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 1ms 42.55kb
+[INFO][2017-8-8 13:36:36] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:36:36] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:37:56] -- running on port:3000
+[INFO][2017-8-8 13:37:57] --   <-- GET /api/logout
+[ERROR][2017-8-8 13:37:57] -- TypeError: Cannot read property 'session' of undefined
+    at logout (E:\private_workspace\treasure-box\koa2_blog\src\controller\user.js:72:23)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:42:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:150:11)
+[INFO][2017-8-8 13:37:57] --   --> GET /api/logout 200 13ms 68b
+[INFO][2017-8-8 13:37:58] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:37:58] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:38:23] -- running on port:3000
+[INFO][2017-8-8 13:38:26] --   <-- GET /api/logout
+[INFO][2017-8-8 13:38:26] --   --> GET /api/logout 302 28ms 43b
+[INFO][2017-8-8 13:38:26] --   <-- GET /login
+[INFO][2017-8-8 13:38:26] --   --> GET /login 200 6ms 2.32kb
+[INFO][2017-8-8 13:38:26] --   <-- GET /src/css/login.css
+[INFO][2017-8-8 13:38:26] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:38:26] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:38:26] --   <-- GET /src/javascript/normal/md5.js
+[INFO][2017-8-8 13:38:26] --   <-- GET /src/javascript/normal/login.js
+[INFO][2017-8-8 13:38:26] --   --> GET /src/css/login.css 200 13ms 8.36kb
+[INFO][2017-8-8 13:38:26] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 10ms 21.57kb
+[INFO][2017-8-8 13:38:26] --   --> GET /src/javascript/normal/md5.js 200 9ms 7.36kb
+[INFO][2017-8-8 13:38:26] --   --> GET /src/javascript/normal/login.js 200 9ms 2.19kb
+[INFO][2017-8-8 13:38:26] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 11ms 84.33kb
+[INFO][2017-8-8 13:38:26] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:38:26] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:38:34] --   <-- POST /api/login
+[INFO][2017-8-8 13:38:34] -- 执行sql语句：SELECT `user`.`id` , `user`.`username` , `user`.`password` , `user`.`email` , `user`.`head` , `user`.`description` , `user`.`sex` FROM `user` WHERE `user`.`username` = ?
+[INFO][2017-8-8 13:38:34] -- 参数：["june_01"]
+[INFO][2017-8-8 13:38:34] --   --> POST /api/login 200 118ms 121b
+[INFO][2017-8-8 13:38:34] --   <-- GET /
+[INFO][2017-8-8 13:38:34] --   --> GET / 200 5ms 16.01kb
+[INFO][2017-8-8 13:38:34] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:38:34] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:38:34] --   --> GET /src/css/index.css 200 2ms 17.87kb
+[INFO][2017-8-8 13:38:34] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 3ms 21.57kb
+[INFO][2017-8-8 13:38:34] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:38:34] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 3ms 84.33kb
+[INFO][2017-8-8 13:38:34] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:38:34] --   --> GET /src/javascript/normal/template.js 200 3ms 4.36kb
+[INFO][2017-8-8 13:38:34] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:38:34] --   --> GET /src/javascript/normal/index.js 200 2ms 3.16kb
+[INFO][2017-8-8 13:38:34] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:38:34] --   --> GET /res/img/head.jpg 200 2ms 12.08kb
+[INFO][2017-8-8 13:38:34] --   <-- GET /api/blog
+[ERROR][2017-8-8 13:38:34] -- ReferenceError: query is not defined
+    at findList (E:\private_workspace\treasure-box\koa2_blog\src\controller\blog.js:43:9)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:42:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:150:11)
+[INFO][2017-8-8 13:38:34] --   --> GET /api/blog 200 4ms 45b
+[INFO][2017-8-8 13:38:34] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:38:34] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 2ms 42.55kb
+[INFO][2017-8-8 13:38:34] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:38:34] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:38:36] --   <-- GET /api/blog
+[ERROR][2017-8-8 13:38:36] -- ReferenceError: query is not defined
+    at findList (E:\private_workspace\treasure-box\koa2_blog\src\controller\blog.js:43:9)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:42:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:150:11)
+[INFO][2017-8-8 13:38:36] --   --> GET /api/blog 200 3ms 45b
+[INFO][2017-8-8 13:38:36] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:38:36] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:38:37] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:38:37] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:38:37] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:38:37] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:38:39] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:38:39] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:38:40] --   <-- GET /api/blog
+[INFO][2017-8-8 13:38:40] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:38:40] -- ReferenceError: query is not defined
+    at findList (E:\private_workspace\treasure-box\koa2_blog\src\controller\blog.js:43:9)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:42:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:150:11)
+[INFO][2017-8-8 13:38:40] --   --> GET /api/blog 200 13ms 45b
+[ERROR][2017-8-8 13:38:40] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:38:40] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:38:40] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:38:45] --   <-- GET /api/blog
+[ERROR][2017-8-8 13:38:45] -- ReferenceError: query is not defined
+    at findList (E:\private_workspace\treasure-box\koa2_blog\src\controller\blog.js:43:9)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:42:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:150:11)
+[INFO][2017-8-8 13:38:45] --   --> GET /api/blog 200 6ms 45b
+[INFO][2017-8-8 13:38:45] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:38:45] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:38:46] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:38:46] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:38:48] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:38:48] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:38:54] --   <-- POST /api/blog
+[INFO][2017-8-8 13:38:54] -- 执行sql语句：INSERT INTO `blog` ( `name` , `type` , `content` , `user_id` ) VALUES ( ? , ? , ? , ? )
+[INFO][2017-8-8 13:38:54] -- 参数：["aaa","vvv","basdasd",10004]
+[INFO][2017-8-8 13:38:54] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`id` = ?
+[INFO][2017-8-8 13:38:54] -- 参数：[10003]
+[INFO][2017-8-8 13:38:54] --   --> POST /api/blog 200 11ms 178b
+[INFO][2017-8-8 13:38:59] --   <-- GET /api/blog
+[ERROR][2017-8-8 13:38:59] -- ReferenceError: query is not defined
+    at findList (E:\private_workspace\treasure-box\koa2_blog\src\controller\blog.js:43:9)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:42:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:150:11)
+[INFO][2017-8-8 13:38:59] --   --> GET /api/blog 200 3ms 45b
+[INFO][2017-8-8 13:38:59] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:38:59] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:39:01] --   <-- GET /
+[INFO][2017-8-8 13:39:01] --   --> GET / 200 3ms 16.01kb
+[INFO][2017-8-8 13:39:01] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:39:01] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:39:01] --   --> GET /src/css/index.css 200 3ms 17.87kb
+[INFO][2017-8-8 13:39:01] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 3ms 21.57kb
+[INFO][2017-8-8 13:39:01] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:39:01] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 3ms 84.33kb
+[INFO][2017-8-8 13:39:01] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:39:01] --   --> GET /src/javascript/normal/template.js 200 3ms 4.36kb
+[INFO][2017-8-8 13:39:01] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:39:01] --   --> GET /src/javascript/normal/index.js 200 1ms 3.16kb
+[INFO][2017-8-8 13:39:01] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:39:01] --   --> GET /res/img/head.jpg 200 4ms 12.08kb
+[INFO][2017-8-8 13:39:01] --   <-- GET /api/blog
+[ERROR][2017-8-8 13:39:01] -- ReferenceError: query is not defined
+    at findList (E:\private_workspace\treasure-box\koa2_blog\src\controller\blog.js:43:9)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:42:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:150:11)
+[INFO][2017-8-8 13:39:01] --   --> GET /api/blog 200 1ms 45b
+[INFO][2017-8-8 13:39:01] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:39:01] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 2ms 42.55kb
+[INFO][2017-8-8 13:39:01] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:39:01] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:39:02] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:39:02] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:39:10] --   <-- GET /api/blog
+[ERROR][2017-8-8 13:39:10] -- ReferenceError: query is not defined
+    at findList (E:\private_workspace\treasure-box\koa2_blog\src\controller\blog.js:43:9)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:42:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:150:11)
+[INFO][2017-8-8 13:39:10] --   --> GET /api/blog 200 6ms 45b
+[INFO][2017-8-8 13:39:10] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:39:10] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:39:43] -- running on port:3000
+[INFO][2017-8-8 13:40:12] --   <-- GET /
+[INFO][2017-8-8 13:40:12] --   --> GET / 200 18ms 16.01kb
+[INFO][2017-8-8 13:40:12] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:40:12] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:40:12] --   --> GET /src/css/index.css 200 30ms 17.87kb
+[INFO][2017-8-8 13:40:12] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 27ms 21.57kb
+[INFO][2017-8-8 13:40:12] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:40:12] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 6ms 84.33kb
+[INFO][2017-8-8 13:40:12] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:40:12] --   --> GET /src/javascript/normal/template.js 200 6ms 4.36kb
+[INFO][2017-8-8 13:40:12] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:40:12] --   --> GET /src/javascript/normal/index.js 200 4ms 3.23kb
+[INFO][2017-8-8 13:40:12] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:40:12] --   --> GET /res/img/head.jpg 200 2ms 12.08kb
+[INFO][2017-8-8 13:40:12] --   <-- GET /api/blog
+[ERROR][2017-8-8 13:40:12] -- TypeError: ctx.query.hasOwnProperty is not a function
+    at findList (E:\private_workspace\treasure-box\koa2_blog\src\controller\blog.js:43:19)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:42:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:150:11)
+[INFO][2017-8-8 13:40:12] --   --> GET /api/blog 200 4ms 67b
+[INFO][2017-8-8 13:40:12] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:40:12] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 1ms 42.55kb
+[INFO][2017-8-8 13:40:13] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:40:13] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:40:14] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:40:14] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:40:14] --   <-- GET /api/blog
+[ERROR][2017-8-8 13:40:14] -- TypeError: ctx.query.hasOwnProperty is not a function
+    at findList (E:\private_workspace\treasure-box\koa2_blog\src\controller\blog.js:43:19)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:42:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-compose\index.js:43:18)
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:150:11)
+[INFO][2017-8-8 13:40:14] --   --> GET /api/blog 200 2ms 67b
+[INFO][2017-8-8 13:40:14] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:40:14] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:40:41] -- running on port:3000
+[INFO][2017-8-8 13:40:42] --   <-- GET /
+[INFO][2017-8-8 13:40:42] --   --> GET / 200 19ms 16.01kb
+[INFO][2017-8-8 13:40:42] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:40:42] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:40:42] --   --> GET /src/css/index.css 200 10ms 17.87kb
+[INFO][2017-8-8 13:40:42] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 10ms 21.57kb
+[INFO][2017-8-8 13:40:42] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:40:42] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 6ms 84.33kb
+[INFO][2017-8-8 13:40:42] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:40:42] --   --> GET /src/javascript/normal/template.js 200 7ms 4.36kb
+[INFO][2017-8-8 13:40:42] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:40:42] --   --> GET /src/javascript/normal/index.js 200 1ms 3.23kb
+[INFO][2017-8-8 13:40:42] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:40:42] --   --> GET /res/img/head.jpg 200 2ms 12.08kb
+[INFO][2017-8-8 13:40:43] --   <-- GET /api/blog
+[INFO][2017-8-8 13:40:43] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:40:43] -- 参数：[10004]
+[INFO][2017-8-8 13:40:43] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:40:43] --   --> GET /api/blog 200 87ms 180b
+[INFO][2017-8-8 13:40:43] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 15ms 42.55kb
+[INFO][2017-8-8 13:40:43] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:40:43] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:40:44] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:40:44] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:41:01] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:41:01] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:41:02] --   <-- GET /api/blog
+[INFO][2017-8-8 13:41:02] --   <-- GET /favicon.ico
+[INFO][2017-8-8 13:41:02] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:41:02] -- 参数：[10004]
+[ERROR][2017-8-8 13:41:02] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:41:02] --   --> GET /api/blog 200 16ms 180b
+[INFO][2017-8-8 13:41:16] --   <-- GET /
+[INFO][2017-8-8 13:41:16] --   --> GET / 200 10ms 16.01kb
+[INFO][2017-8-8 13:41:16] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:41:16] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:41:16] --   --> GET /src/css/index.css 200 10ms 17.87kb
+[INFO][2017-8-8 13:41:16] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 10ms 21.57kb
+[INFO][2017-8-8 13:41:16] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:41:16] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 2ms 84.33kb
+[INFO][2017-8-8 13:41:16] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:41:16] --   --> GET /src/javascript/normal/template.js 200 2ms 4.36kb
+[INFO][2017-8-8 13:41:16] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:41:16] --   --> GET /src/javascript/normal/index.js 200 3ms 3.23kb
+[INFO][2017-8-8 13:41:16] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:41:16] --   --> GET /res/img/head.jpg 200 3ms 12.08kb
+[INFO][2017-8-8 13:41:16] --   <-- GET /api/blog
+[INFO][2017-8-8 13:41:16] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:41:16] -- 参数：[10004]
+[INFO][2017-8-8 13:41:16] --   --> GET /api/blog 200 4ms 180b
+[INFO][2017-8-8 13:41:16] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:41:16] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 1ms 42.55kb
+[INFO][2017-8-8 13:41:16] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:41:16] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:43:01] --   <-- GET /
+[INFO][2017-8-8 13:43:01] --   --> GET / 200 1ms 16.01kb
+[INFO][2017-8-8 13:43:01] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:43:01] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:43:01] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 4ms 21.57kb
+[INFO][2017-8-8 13:43:01] --   --> GET /src/css/index.css 200 5ms 17.87kb
+[INFO][2017-8-8 13:43:01] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:43:01] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 18ms 84.33kb
+[INFO][2017-8-8 13:43:01] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:43:01] --   --> GET /src/javascript/normal/template.js 200 2ms 4.36kb
+[INFO][2017-8-8 13:43:01] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:43:01] --   --> GET /src/javascript/normal/index.js 200 2ms 3.23kb
+[INFO][2017-8-8 13:43:01] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:43:01] --   --> GET /res/img/head.jpg 200 6ms 12.08kb
+[INFO][2017-8-8 13:43:01] --   <-- GET /api/blog
+[INFO][2017-8-8 13:43:01] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:43:01] -- 参数：[10004]
+[INFO][2017-8-8 13:43:01] --   --> GET /api/blog 200 4ms 180b
+[INFO][2017-8-8 13:43:01] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:43:01] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 1ms 42.55kb
+[INFO][2017-8-8 13:43:01] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:43:01] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:43:08] -- running on port:3000
+[INFO][2017-8-8 13:44:15] -- running on port:3000
+[INFO][2017-8-8 13:44:16] --   <-- GET /
+[INFO][2017-8-8 13:44:16] --   --> GET / 200 32ms 15.75kb
+[INFO][2017-8-8 13:44:16] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:44:16] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:44:16] --   --> GET /src/css/index.css 200 9ms 17.87kb
+[INFO][2017-8-8 13:44:16] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 10ms 21.57kb
+[INFO][2017-8-8 13:44:16] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:44:16] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 2ms 84.33kb
+[INFO][2017-8-8 13:44:16] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:44:16] --   --> GET /src/javascript/normal/template.js 200 5ms 4.36kb
+[INFO][2017-8-8 13:44:16] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:44:16] --   --> GET /src/javascript/normal/index.js 200 2ms 3.23kb
+[INFO][2017-8-8 13:44:16] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:44:16] --   --> GET /res/img/head.jpg 200 2ms 12.08kb
+[INFO][2017-8-8 13:44:17] --   <-- GET /api/blog
+[INFO][2017-8-8 13:44:17] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:44:17] -- 参数：[10004]
+[INFO][2017-8-8 13:44:17] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:44:17] --   --> GET /api/blog 200 78ms 180b
+[INFO][2017-8-8 13:44:17] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 16ms 42.55kb
+[INFO][2017-8-8 13:44:17] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:44:17] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:44:20] --   <-- GET /api/blog/10003
+[INFO][2017-8-8 13:44:20] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`id` = ?
+[INFO][2017-8-8 13:44:20] -- 参数：[10003]
+[INFO][2017-8-8 13:44:20] --   --> GET /api/blog/10003 200 18ms 136b
+[INFO][2017-8-8 13:44:20] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:44:20] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:44:52] --   <-- GET /
+[INFO][2017-8-8 13:44:52] --   --> GET / 200 6ms 15.75kb
+[INFO][2017-8-8 13:44:52] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:44:52] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:44:52] --   --> GET /src/css/index.css 200 9ms 17.87kb
+[INFO][2017-8-8 13:44:52] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 8ms 21.57kb
+[INFO][2017-8-8 13:44:52] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:44:52] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 4ms 84.33kb
+[INFO][2017-8-8 13:44:52] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:44:52] --   --> GET /src/javascript/normal/template.js 200 4ms 4.36kb
+[INFO][2017-8-8 13:44:52] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:44:52] --   --> GET /src/javascript/normal/index.js 200 2ms 3.23kb
+[INFO][2017-8-8 13:44:52] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:44:52] --   --> GET /res/img/head.jpg 200 4ms 12.08kb
+[INFO][2017-8-8 13:44:52] --   <-- GET /api/blog/10003
+[INFO][2017-8-8 13:44:52] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`id` = ?
+[INFO][2017-8-8 13:44:52] -- 参数：[10003]
+[INFO][2017-8-8 13:44:52] --   --> GET /api/blog/10003 200 4ms 136b
+[INFO][2017-8-8 13:44:52] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:44:52] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 2ms 42.55kb
+[INFO][2017-8-8 13:44:52] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:44:52] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:44:58] -- running on port:3000
+[INFO][2017-8-8 13:44:59] --   <-- GET /
+[INFO][2017-8-8 13:44:59] --   --> GET / 200 40ms 15.46kb
+[INFO][2017-8-8 13:44:59] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:44:59] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:44:59] --   --> GET /src/css/index.css 200 10ms 17.87kb
+[INFO][2017-8-8 13:44:59] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 9ms 21.57kb
+[INFO][2017-8-8 13:44:59] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:44:59] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 4ms 84.33kb
+[INFO][2017-8-8 13:44:59] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:44:59] --   --> GET /src/javascript/normal/template.js 200 3ms 4.36kb
+[INFO][2017-8-8 13:44:59] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:44:59] --   --> GET /src/javascript/normal/index.js 200 1ms 3.23kb
+[INFO][2017-8-8 13:44:59] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:44:59] --   --> GET /res/img/head.jpg 200 2ms 12.08kb
+[INFO][2017-8-8 13:44:59] --   <-- GET /api/blog/10003
+[INFO][2017-8-8 13:44:59] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`id` = ?
+[INFO][2017-8-8 13:44:59] -- 参数：[10003]
+[INFO][2017-8-8 13:44:59] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:44:59] --   --> GET /api/blog/10003 200 85ms 136b
+[INFO][2017-8-8 13:44:59] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 14ms 42.55kb
+[INFO][2017-8-8 13:44:59] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:44:59] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:45:01] --   <-- GET /api/blog
+[INFO][2017-8-8 13:45:01] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:45:01] -- 参数：[10004]
+[INFO][2017-8-8 13:45:01] --   --> GET /api/blog 200 4ms 180b
+[INFO][2017-8-8 13:45:01] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:45:01] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:45:02] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:45:02] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:45:03] --   <-- GET /api/blog
+[INFO][2017-8-8 13:45:03] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:45:03] -- 参数：[10004]
+[INFO][2017-8-8 13:45:03] --   --> GET /api/blog 200 5ms 180b
+[INFO][2017-8-8 13:45:03] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:45:03] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:45:08] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:45:08] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:45:35] -- running on port:3000
+[INFO][2017-8-8 13:45:37] --   <-- GET /api/blog
+[INFO][2017-8-8 13:45:37] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:45:37] -- 参数：[10004]
+[INFO][2017-8-8 13:45:37] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:45:37] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:45:37] --   --> GET /api/blog 200 120ms 180b
+[INFO][2017-8-8 13:45:38] --   <-- GET /api/blog/10003
+[INFO][2017-8-8 13:45:38] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`id` = ?
+[INFO][2017-8-8 13:45:38] -- 参数：[10003]
+[INFO][2017-8-8 13:45:38] --   --> GET /api/blog/10003 200 18ms 136b
+[INFO][2017-8-8 13:45:38] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:45:38] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:45:39] --   <-- GET /
+[INFO][2017-8-8 13:45:39] --   --> GET / 200 16ms 15.46kb
+[INFO][2017-8-8 13:45:39] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:45:39] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:45:39] --   --> GET /src/css/index.css 200 9ms 17.87kb
+[INFO][2017-8-8 13:45:39] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 10ms 21.57kb
+[INFO][2017-8-8 13:45:39] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:45:39] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 5ms 84.33kb
+[INFO][2017-8-8 13:45:39] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:45:39] --   --> GET /src/javascript/normal/template.js 200 1ms 4.36kb
+[INFO][2017-8-8 13:45:39] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:45:39] --   --> GET /src/javascript/normal/index.js 200 3ms 3.23kb
+[INFO][2017-8-8 13:45:39] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:45:39] --   --> GET /res/img/head.jpg 200 1ms 12.08kb
+[INFO][2017-8-8 13:45:40] --   <-- GET /api/blog/10003
+[INFO][2017-8-8 13:45:40] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`id` = ?
+[INFO][2017-8-8 13:45:40] -- 参数：[10003]
+[INFO][2017-8-8 13:45:40] --   --> GET /api/blog/10003 200 3ms 136b
+[INFO][2017-8-8 13:45:40] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:45:40] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 1ms 42.55kb
+[INFO][2017-8-8 13:45:40] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:45:40] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:45:40] --   <-- GET /api/blog
+[INFO][2017-8-8 13:45:40] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:45:40] -- 参数：[10004]
+[INFO][2017-8-8 13:45:40] --   --> GET /api/blog 200 5ms 180b
+[INFO][2017-8-8 13:45:40] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:45:40] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:45:41] --   <-- GET /api/blog/10003
+[INFO][2017-8-8 13:45:41] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`id` = ?
+[INFO][2017-8-8 13:45:41] -- 参数：[10003]
+[INFO][2017-8-8 13:45:41] --   --> GET /api/blog/10003 200 5ms 136b
+[INFO][2017-8-8 13:45:41] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:45:41] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:45:42] --   <-- GET /api/blog
+[INFO][2017-8-8 13:45:42] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:45:42] -- 参数：[10004]
+[INFO][2017-8-8 13:45:42] --   --> GET /api/blog 200 9ms 180b
+[INFO][2017-8-8 13:45:42] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:45:42] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:45:43] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:45:43] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:48:17] -- running on port:3000
+[INFO][2017-8-8 13:48:21] --   <-- GET /
+[INFO][2017-8-8 13:48:21] --   --> GET / 200 27ms 15.46kb
+[INFO][2017-8-8 13:48:21] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:48:21] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:48:21] --   --> GET /src/css/index.css 200 7ms 17.87kb
+[INFO][2017-8-8 13:48:21] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 6ms 21.57kb
+[INFO][2017-8-8 13:48:21] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:48:21] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 6ms 84.33kb
+[INFO][2017-8-8 13:48:21] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:48:21] --   --> GET /src/javascript/normal/template.js 200 6ms 4.36kb
+[INFO][2017-8-8 13:48:21] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:48:21] --   --> GET /src/javascript/normal/index.js 200 2ms 3.23kb
+[INFO][2017-8-8 13:48:21] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:48:21] --   --> GET /res/img/head.jpg 200 2ms 12.08kb
+[INFO][2017-8-8 13:48:21] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:48:21] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 1ms 42.55kb
+[INFO][2017-8-8 13:48:21] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:48:21] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:48:47] -- ALL /api/:service/:id
+[INFO][2017-8-8 13:48:47] -- GET /api/blog/:id
+[INFO][2017-8-8 13:48:47] -- PATCH /api/blog/:id
+[INFO][2017-8-8 13:48:47] -- DELETE /api/blog/:id
+[INFO][2017-8-8 13:48:47] -- GET /api/blog
+[INFO][2017-8-8 13:48:47] -- POST /api/blog
+[INFO][2017-8-8 13:48:47] -- GET /
+[INFO][2017-8-8 13:48:47] -- GET /login
+[INFO][2017-8-8 13:48:47] -- POST /api/login
+[INFO][2017-8-8 13:48:47] -- POST /api/register
+[INFO][2017-8-8 13:48:47] -- GET /api/logout
+[INFO][2017-8-8 13:48:48] -- running on port:3000
+[INFO][2017-8-8 13:48:53] --   <-- GET /
+[INFO][2017-8-8 13:48:54] --   --> GET / 200 32ms 15.46kb
+[INFO][2017-8-8 13:48:54] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:48:54] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:48:54] --   --> GET /src/css/index.css 200 9ms 17.87kb
+[INFO][2017-8-8 13:48:54] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 7ms 21.57kb
+[INFO][2017-8-8 13:48:54] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:48:54] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 2ms 84.33kb
+[INFO][2017-8-8 13:48:54] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:48:54] --   --> GET /src/javascript/normal/template.js 200 3ms 4.36kb
+[INFO][2017-8-8 13:48:54] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:48:54] --   --> GET /src/javascript/normal/index.js 200 2ms 3.23kb
+[INFO][2017-8-8 13:48:54] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:48:54] --   --> GET /res/img/head.jpg 200 4ms 12.08kb
+[INFO][2017-8-8 13:48:54] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:48:54] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 1ms 42.55kb
+[INFO][2017-8-8 13:48:54] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:48:54] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:49:39] -- running on port:3000
+[INFO][2017-8-8 13:49:41] --   <-- GET /
+[INFO][2017-8-8 13:49:41] --   --> GET / 200 34ms 15.46kb
+[INFO][2017-8-8 13:49:41] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:49:41] --   --> GET /src/css/index.css 200 6ms 17.87kb
+[INFO][2017-8-8 13:49:41] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:49:41] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 5ms 21.57kb
+[INFO][2017-8-8 13:49:41] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:49:41] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 2ms 84.33kb
+[INFO][2017-8-8 13:49:41] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:49:41] --   --> GET /src/javascript/normal/template.js 200 7ms 4.36kb
+[INFO][2017-8-8 13:49:41] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:49:41] --   --> GET /src/javascript/normal/index.js 200 2ms 3.23kb
+[INFO][2017-8-8 13:49:41] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:49:41] --   --> GET /res/img/head.jpg 200 1ms 12.08kb
+[INFO][2017-8-8 13:49:41] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:49:41] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 2ms 42.55kb
+[INFO][2017-8-8 13:49:41] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:49:41] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:50:46] -- running on port:3000
+[INFO][2017-8-8 13:50:48] --   <-- GET /
+[INFO][2017-8-8 13:50:48] --   --> GET / 200 19ms 15.46kb
+[INFO][2017-8-8 13:50:48] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:50:48] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:50:48] --   --> GET /src/css/index.css 200 10ms 17.87kb
+[INFO][2017-8-8 13:50:48] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 8ms 21.57kb
+[INFO][2017-8-8 13:50:48] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:50:48] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 8ms 84.33kb
+[INFO][2017-8-8 13:50:48] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:50:48] --   --> GET /src/javascript/normal/template.js 200 9ms 4.36kb
+[INFO][2017-8-8 13:50:48] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:50:48] --   --> GET /src/javascript/normal/index.js 200 2ms 3.23kb
+[INFO][2017-8-8 13:50:48] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:50:48] --   --> GET /res/img/head.jpg 200 4ms 12.08kb
+[INFO][2017-8-8 13:50:48] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:50:48] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 2ms 42.55kb
+[INFO][2017-8-8 13:50:48] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:50:48] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:66:31)
+[INFO][2017-8-8 13:52:09] -- running on port:3000
+[INFO][2017-8-8 13:52:10] --   <-- GET /
+[INFO][2017-8-8 13:52:10] --   --> GET / 200 31ms 15.46kb
+[INFO][2017-8-8 13:52:10] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:52:10] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:52:10] --   --> GET /src/css/index.css 200 8ms 17.87kb
+[INFO][2017-8-8 13:52:10] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 9ms 21.57kb
+[INFO][2017-8-8 13:52:10] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:52:10] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 2ms 84.33kb
+[INFO][2017-8-8 13:52:10] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:52:10] --   --> GET /src/javascript/normal/template.js 200 2ms 4.36kb
+[INFO][2017-8-8 13:52:10] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:52:10] --   --> GET /src/javascript/normal/index.js 200 1ms 3.23kb
+[INFO][2017-8-8 13:52:10] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:52:10] --   --> GET /res/img/head.jpg 200 5ms 12.08kb
+[INFO][2017-8-8 13:52:11] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:52:11] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 2ms 42.55kb
+[INFO][2017-8-8 13:52:11] --   <-- GET /favicon.ico
+[ERROR][2017-8-8 13:52:11] -- TypeError: Cannot read property 'toLowerCase' of null
+    at app.use (E:\private_workspace\treasure-box\koa2_blog\src\app.js:68:31)
+[INFO][2017-8-8 13:52:49] -- running on port:3000
+[INFO][2017-8-8 13:52:50] --   <-- GET /
+[INFO][2017-8-8 13:52:50] --   --> GET / 200 32ms 15.46kb
+[INFO][2017-8-8 13:52:50] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:52:50] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:52:50] --   --> GET /src/css/index.css 200 13ms 17.87kb
+[INFO][2017-8-8 13:52:50] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 13ms 21.57kb
+[INFO][2017-8-8 13:52:50] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:52:50] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 5ms 84.33kb
+[INFO][2017-8-8 13:52:50] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:52:50] --   --> GET /src/javascript/normal/template.js 200 2ms 4.36kb
+[INFO][2017-8-8 13:52:50] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:52:50] --   --> GET /src/javascript/normal/index.js 200 2ms 3.23kb
+[INFO][2017-8-8 13:52:50] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:52:50] --   --> GET /res/img/head.jpg 200 2ms 12.08kb
+[INFO][2017-8-8 13:52:50] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:52:50] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 1ms 42.55kb
+[INFO][2017-8-8 13:52:50] --   <-- GET /favicon.ico
+[INFO][2017-8-8 13:52:50] --   --> GET /favicon.ico 404 1ms -
+[INFO][2017-8-8 13:53:17] --   <-- GET /
+[INFO][2017-8-8 13:53:17] --   --> GET / 200 4ms 15.46kb
+[INFO][2017-8-8 13:53:17] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:53:17] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:53:17] --   --> GET /src/css/index.css 200 4ms 17.87kb
+[INFO][2017-8-8 13:53:17] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 4ms 21.57kb
+[INFO][2017-8-8 13:53:17] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:53:17] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 4ms 84.33kb
+[INFO][2017-8-8 13:53:17] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:53:17] --   --> GET /src/javascript/normal/template.js 200 1ms 4.36kb
+[INFO][2017-8-8 13:53:17] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:53:17] --   --> GET /src/javascript/normal/index.js 200 2ms 3.23kb
+[INFO][2017-8-8 13:53:17] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:53:17] --   --> GET /res/img/head.jpg 200 2ms 12.08kb
+[INFO][2017-8-8 13:53:17] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:53:17] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 4ms 42.55kb
+[INFO][2017-8-8 13:54:12] --   <-- GET /api/blog
+[INFO][2017-8-8 13:54:12] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:54:12] -- 参数：[10004]
+[INFO][2017-8-8 13:54:12] --   --> GET /api/blog 200 141ms 180b
+[INFO][2017-8-8 13:54:13] --   <-- GET /api/blog/10003
+[INFO][2017-8-8 13:54:13] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`id` = ?
+[INFO][2017-8-8 13:54:13] -- 参数：[10003]
+[INFO][2017-8-8 13:54:13] --   --> GET /api/blog/10003 200 7ms 136b
+[INFO][2017-8-8 13:54:14] --   <-- GET /
+[INFO][2017-8-8 13:54:14] --   --> GET / 200 17ms 15.46kb
+[INFO][2017-8-8 13:54:14] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:54:14] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:54:14] --   --> GET /src/css/index.css 200 5ms 17.87kb
+[INFO][2017-8-8 13:54:14] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 5ms 21.57kb
+[INFO][2017-8-8 13:54:14] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:54:14] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 2ms 84.33kb
+[INFO][2017-8-8 13:54:14] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:54:14] --   --> GET /src/javascript/normal/template.js 200 1ms 4.36kb
+[INFO][2017-8-8 13:54:14] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:54:14] --   --> GET /src/javascript/normal/index.js 200 3ms 3.23kb
+[INFO][2017-8-8 13:54:14] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:54:14] --   --> GET /res/img/head.jpg 200 4ms 12.08kb
+[INFO][2017-8-8 13:54:14] --   <-- GET /api/blog/10003
+[INFO][2017-8-8 13:54:14] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`id` = ?
+[INFO][2017-8-8 13:54:14] -- 参数：[10003]
+[INFO][2017-8-8 13:54:14] --   --> GET /api/blog/10003 200 5ms 136b
+[INFO][2017-8-8 13:54:14] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:54:14] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 3ms 42.55kb
+[INFO][2017-8-8 13:56:19] --   <-- GET /
+[INFO][2017-8-8 13:56:19] --   --> GET / 200 7ms 15.46kb
+[INFO][2017-8-8 13:56:19] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:56:19] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:56:19] --   --> GET /src/css/index.css 200 5ms 17.87kb
+[INFO][2017-8-8 13:56:19] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 3ms 21.57kb
+[INFO][2017-8-8 13:56:19] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:56:19] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 1ms 84.33kb
+[INFO][2017-8-8 13:56:19] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:56:19] --   --> GET /src/javascript/normal/template.js 200 2ms 4.36kb
+[INFO][2017-8-8 13:56:19] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:56:19] --   --> GET /src/javascript/normal/index.js 200 2ms 3.22kb
+[INFO][2017-8-8 13:56:19] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:56:19] --   --> GET /res/img/head.jpg 200 4ms 12.08kb
+[INFO][2017-8-8 13:56:19] --   <-- GET /api/blog/10003
+[INFO][2017-8-8 13:56:19] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`id` = ?
+[INFO][2017-8-8 13:56:19] -- 参数：[10003]
+[INFO][2017-8-8 13:56:19] --   --> GET /api/blog/10003 200 5ms 136b
+[INFO][2017-8-8 13:56:19] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:56:19] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 2ms 42.55kb
+[INFO][2017-8-8 13:56:22] --   <-- GET /
+[INFO][2017-8-8 13:56:22] --   --> GET / 200 4ms 15.46kb
+[INFO][2017-8-8 13:56:22] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:56:22] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:56:22] --   --> GET /src/css/index.css 200 4ms 17.87kb
+[INFO][2017-8-8 13:56:22] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 1ms 21.57kb
+[INFO][2017-8-8 13:56:22] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:56:22] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 3ms 84.33kb
+[INFO][2017-8-8 13:56:22] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:56:22] --   --> GET /src/javascript/normal/template.js 200 2ms 4.36kb
+[INFO][2017-8-8 13:56:22] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:56:22] --   --> GET /src/javascript/normal/index.js 200 3ms 3.22kb
+[INFO][2017-8-8 13:56:22] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:56:22] --   --> GET /res/img/head.jpg 200 3ms 12.08kb
+[INFO][2017-8-8 13:56:22] --   <-- GET /api/blog/10003
+[INFO][2017-8-8 13:56:22] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`id` = ?
+[INFO][2017-8-8 13:56:22] -- 参数：[10003]
+[INFO][2017-8-8 13:56:22] --   --> GET /api/blog/10003 200 2ms 136b
+[INFO][2017-8-8 13:56:22] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:56:22] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 2ms 42.55kb
+[INFO][2017-8-8 13:56:25] --   <-- GET /
+[INFO][2017-8-8 13:56:25] --   --> GET / 200 3ms 15.46kb
+[INFO][2017-8-8 13:56:25] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:56:25] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:56:25] --   --> GET /src/css/index.css 200 4ms 17.87kb
+[INFO][2017-8-8 13:56:25] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 3ms 21.57kb
+[INFO][2017-8-8 13:56:25] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:56:25] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 1ms 84.33kb
+[INFO][2017-8-8 13:56:25] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:56:25] --   --> GET /src/javascript/normal/template.js 200 1ms 4.36kb
+[INFO][2017-8-8 13:56:25] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:56:25] --   --> GET /src/javascript/normal/index.js 200 1ms 3.22kb
+[INFO][2017-8-8 13:56:25] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:56:25] --   --> GET /res/img/head.jpg 200 2ms 12.08kb
+[INFO][2017-8-8 13:56:25] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:56:25] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 2ms 42.55kb
+[INFO][2017-8-8 13:56:31] --   <-- GET /api/blog/10003
+[INFO][2017-8-8 13:56:31] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`id` = ?
+[INFO][2017-8-8 13:56:31] -- 参数：[10003]
+[INFO][2017-8-8 13:56:31] --   --> GET /api/blog/10003 200 11ms 136b
+[INFO][2017-8-8 13:56:58] -- running on port:3000
+[INFO][2017-8-8 13:56:59] --   <-- GET /
+[INFO][2017-8-8 13:56:59] --   --> GET / 200 17ms 15.46kb
+[INFO][2017-8-8 13:56:59] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:56:59] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:56:59] --   --> GET /src/css/index.css 200 12ms 17.87kb
+[INFO][2017-8-8 13:56:59] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 8ms 21.57kb
+[INFO][2017-8-8 13:56:59] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:56:59] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 2ms 84.33kb
+[INFO][2017-8-8 13:56:59] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:56:59] --   --> GET /src/javascript/normal/template.js 200 2ms 4.36kb
+[INFO][2017-8-8 13:56:59] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:56:59] --   --> GET /src/javascript/normal/index.js 200 1ms 3.22kb
+[INFO][2017-8-8 13:56:59] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:56:59] --   --> GET /res/img/head.jpg 200 1ms 12.08kb
+[INFO][2017-8-8 13:56:59] --   <-- GET /api/blog/10003
+[INFO][2017-8-8 13:56:59] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`id` = ?
+[INFO][2017-8-8 13:56:59] -- 参数：[10003]
+[INFO][2017-8-8 13:56:59] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:56:59] --   --> GET /api/blog/10003 200 81ms 178b
+[INFO][2017-8-8 13:56:59] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 13ms 42.55kb
+[INFO][2017-8-8 13:57:19] --   <-- GET /api/blog/10003
+[INFO][2017-8-8 13:57:19] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`id` = ?
+[INFO][2017-8-8 13:57:19] -- 参数：[10003]
+[INFO][2017-8-8 13:57:19] --   --> GET /api/blog/10003 200 16ms 178b
+[INFO][2017-8-8 13:57:27] --   <-- GET /
+[INFO][2017-8-8 13:57:27] --   --> GET / 200 7ms 15.46kb
+[INFO][2017-8-8 13:57:27] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:57:27] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:57:27] --   --> GET /src/css/index.css 200 11ms 17.87kb
+[INFO][2017-8-8 13:57:27] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 10ms 21.57kb
+[INFO][2017-8-8 13:57:27] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:57:27] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 2ms 84.33kb
+[INFO][2017-8-8 13:57:27] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:57:27] --   --> GET /src/javascript/normal/template.js 200 2ms 4.36kb
+[INFO][2017-8-8 13:57:27] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:57:27] --   --> GET /src/javascript/normal/index.js 200 2ms 3.22kb
+[INFO][2017-8-8 13:57:27] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:57:27] --   --> GET /res/img/head.jpg 200 2ms 12.08kb
+[INFO][2017-8-8 13:57:28] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:57:28] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 2ms 42.55kb
+[INFO][2017-8-8 13:58:19] --   <-- GET /api/blog
+[INFO][2017-8-8 13:58:19] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:58:19] -- 参数：[10004]
+[INFO][2017-8-8 13:58:19] --   --> GET /api/blog 200 10ms 180b
+[INFO][2017-8-8 13:58:20] --   <-- GET /api/blog
+[INFO][2017-8-8 13:58:20] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:58:20] -- 参数：[10004]
+[INFO][2017-8-8 13:58:20] --   --> GET /api/blog 200 9ms 180b
+[INFO][2017-8-8 13:58:23] --   <-- GET /
+[INFO][2017-8-8 13:58:23] --   --> GET / 200 2ms 15.46kb
+[INFO][2017-8-8 13:58:23] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:58:23] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:58:23] --   --> GET /src/css/index.css 200 2ms 17.87kb
+[INFO][2017-8-8 13:58:23] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 4ms 21.57kb
+[INFO][2017-8-8 13:58:23] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:58:23] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 3ms 84.33kb
+[INFO][2017-8-8 13:58:23] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:58:23] --   --> GET /src/javascript/normal/template.js 200 2ms 4.36kb
+[INFO][2017-8-8 13:58:23] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:58:23] --   --> GET /src/javascript/normal/index.js 200 2ms 3.22kb
+[INFO][2017-8-8 13:58:23] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:58:23] --   --> GET /res/img/head.jpg 200 2ms 12.08kb
+[INFO][2017-8-8 13:58:23] --   <-- GET /api/blog
+[INFO][2017-8-8 13:58:23] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:58:23] -- 参数：[10004]
+[INFO][2017-8-8 13:58:23] --   --> GET /api/blog 200 3ms 180b
+[INFO][2017-8-8 13:58:23] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:58:23] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 2ms 42.55kb
+[INFO][2017-8-8 13:58:28] --   <-- GET /
+[INFO][2017-8-8 13:58:28] --   --> GET / 200 4ms 15.46kb
+[INFO][2017-8-8 13:58:28] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 13:58:28] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 13:58:28] --   --> GET /src/css/index.css 200 3ms 17.87kb
+[INFO][2017-8-8 13:58:28] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 2ms 21.57kb
+[INFO][2017-8-8 13:58:28] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 13:58:28] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 4ms 84.33kb
+[INFO][2017-8-8 13:58:28] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 13:58:28] --   --> GET /src/javascript/normal/template.js 200 3ms 4.36kb
+[INFO][2017-8-8 13:58:28] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 13:58:28] --   --> GET /src/javascript/normal/index.js 200 2ms 3.22kb
+[INFO][2017-8-8 13:58:28] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 13:58:28] --   --> GET /res/img/head.jpg 200 3ms 12.08kb
+[INFO][2017-8-8 13:58:29] --   <-- GET /api/blog
+[INFO][2017-8-8 13:58:29] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:58:29] -- 参数：[10004]
+[INFO][2017-8-8 13:58:29] --   --> GET /api/blog 200 3ms 180b
+[INFO][2017-8-8 13:58:29] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 13:58:29] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 4ms 42.55kb
+[INFO][2017-8-8 13:58:36] --   <-- GET /api/blog
+[INFO][2017-8-8 13:58:36] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 13:58:36] -- 参数：[10004]
+[INFO][2017-8-8 13:58:36] --   --> GET /api/blog 200 4ms 180b
+[INFO][2017-8-8 13:58:41] --   <-- GET /api/blog?search&q=a
+[ERROR][2017-8-8 13:58:41] -- TypeError: Cannot convert object to primitive value
+    at GenSql.find (E:\private_workspace\treasure-box\koa2_blog\node_modules\gen-sql\index.js:392:101)
+    at Object.find (E:\private_workspace\treasure-box\koa2_blog\src\util\db.js:178:26)
+    at BlogDao.search (E:\private_workspace\treasure-box\koa2_blog\src\dao\blog.js:58:30)
+    at BlogService.search (E:\private_workspace\treasure-box\koa2_blog\src\service\blog.js:13:31)
+    at findList (E:\private_workspace\treasure-box\koa2_blog\src\controller\blog.js:45:36)
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at E:\private_workspace\treasure-box\koa2_blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+[INFO][2017-8-8 13:58:41] --   --> GET /api/blog?search&q=a 200 6ms 65b
+[INFO][2017-8-8 14:01:18] -- running on port:3000
+[INFO][2017-8-8 14:01:18] --   <-- GET /api/blog
+[INFO][2017-8-8 14:01:18] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 14:01:18] -- 参数：[10004]
+[INFO][2017-8-8 14:01:18] --   --> GET /api/blog 200 95ms 180b
+[INFO][2017-8-8 14:01:20] --   <-- GET /
+[INFO][2017-8-8 14:01:20] --   --> GET / 200 9ms 15.46kb
+[INFO][2017-8-8 14:01:21] --   <-- GET /src/css/index.css
+[INFO][2017-8-8 14:01:21] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 14:01:21] --   --> GET /src/css/index.css 200 9ms 17.87kb
+[INFO][2017-8-8 14:01:21] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 10ms 21.57kb
+[INFO][2017-8-8 14:01:21] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 14:01:21] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 2ms 84.33kb
+[INFO][2017-8-8 14:01:21] --   <-- GET /src/javascript/normal/template.js
+[INFO][2017-8-8 14:01:21] --   --> GET /src/javascript/normal/template.js 200 2ms 4.36kb
+[INFO][2017-8-8 14:01:21] --   <-- GET /src/javascript/normal/index.js
+[INFO][2017-8-8 14:01:21] --   --> GET /src/javascript/normal/index.js 200 3ms 3.22kb
+[INFO][2017-8-8 14:01:21] --   <-- GET /res/img/head.jpg
+[INFO][2017-8-8 14:01:21] --   --> GET /res/img/head.jpg 200 2ms 12.08kb
+[INFO][2017-8-8 14:01:21] --   <-- GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+[INFO][2017-8-8 14:01:21] --   --> GET /res/lib/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1 200 1ms 42.55kb
+[INFO][2017-8-8 14:01:25] --   <-- GET /api/blog?search&q=a
+[INFO][2017-8-8 14:01:25] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`name` LIKE "%%" OR `blog`.`content` LIKE "%%" OR `blog`.`type` LIKE "%%"
+[INFO][2017-8-8 14:01:25] -- 参数：[]
+[INFO][2017-8-8 14:01:25] --   --> GET /api/blog?search&q=a 200 6ms 52.04kb
+[INFO][2017-8-8 14:01:28] --   <-- GET /api/blog
+[INFO][2017-8-8 14:01:28] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 14:01:28] -- 参数：[10004]
+[INFO][2017-8-8 14:01:28] --   --> GET /api/blog 200 34ms 180b
+[INFO][2017-8-8 14:01:30] --   <-- GET /api/blog/10003
+[INFO][2017-8-8 14:01:30] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`id` = ?
+[INFO][2017-8-8 14:01:30] -- 参数：[10003]
+[INFO][2017-8-8 14:01:30] --   --> GET /api/blog/10003 200 14ms 178b
+[INFO][2017-8-8 14:01:52] --   <-- GET /api/blog
+[INFO][2017-8-8 14:01:52] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 14:01:52] -- 参数：[10004]
+[INFO][2017-8-8 14:01:52] --   --> GET /api/blog 200 6ms 180b
+[INFO][2017-8-8 14:01:54] --   <-- GET /api/blog
+[INFO][2017-8-8 14:01:54] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 14:01:54] -- 参数：[10004]
+[INFO][2017-8-8 14:01:54] --   --> GET /api/blog 200 6ms 180b
+[INFO][2017-8-8 14:02:06] --   <-- GET /api/blog
+[INFO][2017-8-8 14:02:06] -- 执行sql语句：SELECT `blog`.`id` , `blog`.`name` , `blog`.`user_id` , `blog`.`create_time` , `blog`.`content` , `blog`.`type` , `user`.`username` AS `username` FROM `blog` INNER JOIN `user` ON user.id = blog.user_id WHERE `blog`.`user_id` = ?
+[INFO][2017-8-8 14:02:06] -- 参数：[10004]
+[INFO][2017-8-8 14:02:06] --   --> GET /api/blog 200 7ms 180b
+[INFO][2017-8-8 14:02:07] --   <-- GET /api/logout
+[INFO][2017-8-8 14:02:07] --   --> GET /api/logout 302 12ms 43b
+[INFO][2017-8-8 14:02:07] --   <-- GET /login
+[INFO][2017-8-8 14:02:07] --   --> GET /login 200 3ms 2.32kb
+[INFO][2017-8-8 14:02:07] --   <-- GET /src/css/login.css
+[INFO][2017-8-8 14:02:07] --   --> GET /src/css/login.css 200 3ms 8.36kb
+[INFO][2017-8-8 14:02:07] --   <-- GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css
+[INFO][2017-8-8 14:02:07] --   <-- GET /src/javascript/lib/jquery/dist/jquery.min.js
+[INFO][2017-8-8 14:02:07] --   <-- GET /src/javascript/normal/md5.js
+[INFO][2017-8-8 14:02:07] --   <-- GET /src/javascript/normal/login.js
+[INFO][2017-8-8 14:02:07] --   --> GET /res/lib/Font-Awesome-3.2.1/css/font-awesome.min.css 200 8ms 21.57kb
+[INFO][2017-8-8 14:02:07] --   --> GET /src/javascript/lib/jquery/dist/jquery.min.js 200 8ms 84.33kb
+[INFO][2017-8-8 14:02:07] --   --> GET /src/javascript/normal/md5.js 200 7ms 7.36kb
+[INFO][2017-8-8 14:02:07] --   --> GET /src/javascript/normal/login.js 200 5ms 2.19kb

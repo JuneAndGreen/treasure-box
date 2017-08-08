@@ -15,11 +15,17 @@
 
             #round {
                 position: absolute;
-                width: 450px;
-                height: 450px;
                 top: 120px;
                 left: 50%;
                 margin: 0 0 0 -225px;
+            }
+
+            .pie {
+                text-align: center;
+                font-size: 20px;
+                padding-top: 20px;
+                color: #fff;
+                text-shadow: 1px 1px 1px #000;
             }
         </style>
     </head>
@@ -30,15 +36,15 @@
             new Round(document.getElementById('round'), {
                 radius: 250, // 半径
                 strokeColor: '#fff', // 边界颜色
-                strokeWidth: 4, // 边界宽度
+                strokeWidth: 10, // 边界宽度
                 roundWidth: 200, // 圆环宽度
                 data: [
-                    { value: 12, color: '#2C3E50'}, // value - 扇形值，color - 扇形颜色
-                    { value: 22, color: '#FC4349'},
-                    { value: 42, color: '#6DBCDB'},
-                    { value: 12, color: '#F7E248'},
-                    { value: 2, color: '#D7DADB'},
-                    { value: 55, color: '#000'},
+                    { value: 12, color: '#2C3E50', class: 'pie', content: '<div>1</div>'}, // value - 扇形值，color - 扇形颜色
+                    { value: 22, color: '#FC4349', class: 'pie', content: '<div>2</div>'},
+                    { value: 42, color: '#6DBCDB', class: 'pie', content: '<div>3</div>'},
+                    { value: 12, color: '#F7E248', class: 'pie', content: '<div>4</div>'},
+                    { value: 2, color: '#D7DADB', class: 'pie', content: '<div>5</div>'},
+                    { value: 55, color: '#000', class: 'pie', content: '<div>6</div>'},
                 ]
             });
         </script>

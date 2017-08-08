@@ -1,0 +1,30 @@
+<div class="m-bloglist cnt j-bloglist">
+    <ul class="list">
+        <% for(var i=0,len=list.length; i<len; i++) { %>
+        <% var x = list[i]; %>
+        <li>
+            <div class="liitem">
+                <h3 class="title">
+                    <a class="head" href="#/blog/<%= user %>/detail/<%= x.id %>"><%= x.name %></a>
+                    <% if(window.user&&window.user.username&&window.user.username === user) { %>
+                    <!-- 作者权限 -->
+                    <div class="opr">
+                        <a href="#" title="编辑"><i class="icon-edit"></i></a>
+                        <a href="#" title="删除"><i class="icon-trash"></i></a>
+                    </div>
+                    <% } %>
+                </h3>
+                <div class="info"><span>评论(<%= x.comment %>)</span><span>转载(<%= x.share %>)</span><span>发布时间：<%= x.create_time %></span><span>分类：<%= x.cat %></span></div>
+                <div class="content"><%= x.abbr_content %></div>
+            </div>
+        </li>
+        <% } %>
+    </ul>
+    <div class="m-page">
+        <a href="#" class="u-btn">GO!</a>
+        <input type="text" class="u-ipt ipt" placeholder="页" />
+        <a href="#" class="u-btn">下一页</a>
+        <a href="#" class="u-btn">上一页</a>
+        <div class="info">当前第<span>1</span>页，共<span>3</span>页</div>
+    </div>
+</div>
