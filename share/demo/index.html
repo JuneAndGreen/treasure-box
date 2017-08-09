@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>demo</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+<div class="cnt">
+    <div id="btn1" class="item-image icon-weibo" title="微博"></div>
+    <div id="btn2" class="item-image icon-qzone" title="qq空间"></div>
+    <div id="btn3" class="item-image icon-qq" title="qq"></div>
+    <div id="btn4" class="item-image icon-facebook" title="facebook"></div>
+    <div id="btn5" class="item-image icon-twitter" title="twitter"></div>
+    <div id="btn6" class="item-image icon-linkedin" title="linkedin"></div>
+    <div id="btn7" class="item-image icon-douban" title="豆瓣"></div>
+    <div id="btn8" class="item-image icon-wechat" title="微信"></div>
+</div>
+
+<script src="../share.js"></script>
+<script type="text/javascript">
+    let share = new Share();
+
+    document.getElementById('btn1').onclick = () => {
+        share.doShare('weibo');
+    };
+
+    document.getElementById('btn2').onclick = () => {
+        share.doShare('qzone');
+    };
+
+    document.getElementById('btn3').onclick = () => {
+        share.doShare('qq');
+    };
+
+    document.getElementById('btn4').onclick = () => {
+        share.doShare('facebook');
+    };
+
+    document.getElementById('btn5').onclick = () => {
+        share.doShare('twitter');
+    };
+
+    document.getElementById('btn6').onclick = () => {
+        share.doShare('linkedin');
+    };
+
+    document.getElementById('btn7').onclick = () => {
+        share.doShare('douban');
+    };
+
+    document.getElementById('btn8').onclick = () => {
+        alert('假装我是二维码')
+    };
+</script>
+</body>
+</html>

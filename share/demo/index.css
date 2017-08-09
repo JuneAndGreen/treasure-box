@@ -1,0 +1,129 @@
+.cnt {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: "socialshare";
+    src: url(./fonts/iconfont.eot);
+    src: url(./fonts/iconfont.eot?#iefix) format('embedded-opentype'), url(./fonts/iconfont.woff) format('woff'), url(./fonts/iconfont.ttf) format('truetype'), url(./fonts/iconfont.svg#iconfont) format('svg');
+}
+
+.item-image {
+    width: 50px;
+    height: 50px;
+
+    margin: 0 20px;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    cursor: pointer;
+
+    font-family: "socialshare" !important;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    line-height: 48px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wechat {
+    color: #7bc549;
+    border-color: #7bc549; 
+}
+.icon-wechat::before {
+    content: "\f09a";
+}
+.icon-wechat:hover {
+    background-color: #7bc549;
+    color: #fff;
+}
+
+.icon-qq {
+    color: #56b6e7;
+    border-color: #56b6e7; 
+}
+.icon-qq::before {
+    content: "\f11a";
+}
+.icon-qq:hover {
+    background-color: #56b6e7;
+    color: #fff;
+}
+
+.icon-qzone {
+    color: #FDBE3D;
+    border-color: #FDBE3D; 
+}
+.icon-qzone::before {
+    content: "\f08a";
+}
+.icon-qzone:hover {
+    background-color: #FDBE3D;
+    color: #fff;
+}
+
+.icon-weibo {
+    color: #ff763b;
+    border-color: #ff763b; 
+}
+.icon-weibo::before {
+    content: "\f12a";
+}
+.icon-weibo:hover {
+    background-color: #ff763b;
+    color: #fff;
+}
+
+.icon-douban {
+    color: #33b045;
+    border-color: #33b045; 
+}
+.icon-douban::before {
+    content: "\f10a";
+}
+.icon-douban:hover {
+    background-color: #33b045;
+    color: #fff;
+}
+
+.icon-linkedin {
+    color: #0077B5;
+    border-color: #0077B5; 
+}
+.icon-linkedin::before {
+    content: "\f01a";
+}
+.icon-linkedin:hover {
+    background-color: #0077B5;
+    color: #fff;
+}
+
+.icon-facebook {
+    color: #44619D;
+    border-color: #44619D; 
+}
+.icon-facebook::before {
+    content: "\f03a";
+}
+.icon-facebook:hover {
+    background-color: #44619D;
+    color: #fff;
+}
+
+.icon-twitter {
+    color: #55acee;
+    border-color: #55acee; 
+}
+.icon-twitter::before {
+    content: "\f06a";
+}
+.icon-twitter:hover {
+    background-color: #55acee;
+    color: #fff;
+}
