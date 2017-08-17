@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <meta name="viewport" content="height= device-height,width=device-width,initial-scale=1.0,user-scalable=no,minimal-ui" />
+    <style type="text/css">
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .cnt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .thumb {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+        }
+
+        .top {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background-color: red;
+        }
+
+        .bottom {
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background-color: blue;
+        }
+
+        .left {
+            position: absolute;
+            left: -100px;
+            top: 0;
+            bottom: 0;
+            width: 100px;
+            background-color: yellow;
+        }
+
+        .right {
+            position: absolute;
+            right: -100px;
+            top: 0;
+            bottom: 0;
+            width: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<div id="cnt" class="cnt">
+    <div class="thumb"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="top"></div>
+    <div class="bottom"></div>
+</div>
+<script type="text/javascript" src="../touch_swipe.js"></script>
+<script type="text/javascript">
+    let dom = document.getElementById('cnt');
+
+    new Swiper(dom, {
+        min: 0, // translate字段的最小值
+        max: 100, // translate字段的最大值
+        direction: 'v', // v - 纵向，h - 横向
+        onChange(value) {
+            // translate字段变化
+            console.log(value)
+        },
+        onEnd(evt, value) {
+            // 划动结束
+            if (value >= 0 && value <= 50) {
+                // 回到值为0的状态
+                this.recover(0);
+            } else {
+                // 回到值为max的状态
+                this.recover();
+            }
+        }
+    });
+
+    // new Swiper(dom, {
+    //     min: -100,
+    //     max: 0,
+    //     direction: 'v',
+    //     onEnd(evt, value) {
+    //         if (value >= -50 && value <= 0) {
+    //             this.recover(0);
+    //         } else {
+    //             this.recover(-100);
+    //         }
+    //     }
+    // });
+
+    // new Swiper(dom, {
+    //     min: -100,
+    //     max: 0,
+    //     direction: 'h',
+    //     onEnd(evt, value) {
+    //         if (value >= -50 && value <= 0) {
+    //             this.recover(0);
+    //         } else {
+    //             this.recover(-100);
+    //         }
+    //     }
+    // });
+
+    // new Swiper(dom, {
+    //     min: 0,
+    //     max: 100,
+    //     direction: 'h',
+    //     onEnd(evt, value) {
+    //         if (value >= 0 && value <= 50) {
+    //             this.recover(0);
+    //         } else {
+    //             this.recover();
+    //         }
+    //     }
+    // });
+</script>
+</body>
+</html>
