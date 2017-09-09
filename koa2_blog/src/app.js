@@ -13,8 +13,8 @@ const staticDir = require('koa-static');
 const render = require('koa-ejs');
 const router = require('koa-router')()
 
-const filterConfig = require('./config/filter.js');
-const controllerConfig = require('./config/controller.js');
+const filterConfig = require('./config/filter');
+const controllerConfig = require('./config/controller');
 const db = require('./util/db');
 const winstonLogger = require('./util/log');
 

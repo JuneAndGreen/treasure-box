@@ -61,7 +61,7 @@ async function create(ctx, next) {
 
     query.user_id = userId;
 
-    ctx.result = await service.add(query, ctx);;
+    ctx.result = await service.add(query, ctx);
 }
 
 module.exports = {
