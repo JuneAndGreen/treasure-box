@@ -1,0 +1,71 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#box{
+	margin: 20px;
+	position: relative;
+}
+
+.show{
+	width: 220px;
+	height: 30px;
+	padding: 5px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	text-align: right;
+}
+
+.plane{
+	position: relative;
+	width: 220px;
+	margin-top: 20px;
+}
+
+.plane .key{
+	float: left;
+	height: 30px;
+	width: 30px;
+	padding: 5px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.plane .key:hover{
+	background: #ddd;
+}
+
+.plane .key:active{
+	background: #000;
+	color: #fff;
+}
+
+.plane .num{
+	width: 126px;
+}
+
+.plane .opr{
+	position: absolute;
+	top: 0;
+	left: 146px;
+	width: 84px;
+}
+
+.opr .top{
+	height: 84px;
+}
+
+.opr .bottom{
+	margin-top: 20px;
+}
+
+.opr .equal{
+	float: none;
+	width: 74px;
+	height: 52px;
+	line-height: 52px;
+}

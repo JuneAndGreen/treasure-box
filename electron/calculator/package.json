@@ -1,0 +1,23 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "pack": "electron-builder --dir"
+  },
+  "author": "june01",
+  "build": {
+    "appId": "com.june01.calculator",
+    "win": {
+      "icon": "./icon.ico"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "7zip-bin-win": "^2.1.1",
+    "electron": "^1.7.8",
+    "electron-builder": "^19.34.2"
+  }
+}

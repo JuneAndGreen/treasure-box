@@ -1,9 +1,9 @@
-*/node_modules/
-*/.idea/
-*/q
-*/.DS_Store
-*/npm-debug.log
-*/dist/
+node_modules
+.idea
+q
+.DS_Store
+npm-debug.log
+dist
 
 koa_blog/src/uploads/
 koa_blog/webapp/src/css/
