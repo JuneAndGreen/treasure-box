@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            margin: 50px;
+        }
+
+        li {
+            width: 200px;
+            height: 50px;
+            margin-bottom: 2px;
+
+            background-color: #bde292;
+            line-height: 50px;
+            text-align: center;
+            list-style-type: none;
+            cursor: move;
+            user-select: none;
+        }
+
+        .proxy {
+            background-color: #9fbd7b;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+
+    <script type="text/javascript" src="../drag_drop.js"></script>
+    <script>
+        let parent = document.getElementById('list');
+        let list = parent.children;
+
+        // 获取节点序号
+        function getIndex(node) {
+            return Array.prototype.indexOf.call(list, node)
+        }
+
+        for (let i = 0, len = list.length; i < len; i++) {
+            let node = list[i];
+
+            new Drag(node, {
+                interval: 200, // 单双击事件时间间隔
+                proxy: 'clone', // 值可为 cloneShape／self／一个返回代理节点的函数，拖拽时产生的代理元素，默认为克隆一个本体
+                proxyClass: 'proxy', // 代理节点的附加样式
+                direction: 'vertical', // 值可为 vertical/horizontal/空，拖拽限制方向，为空时不限制方向
+                name: 'xxx', // 可放置在 同名 或 无名字 的drop元素
+
+                dragstart({ source, evt }) {
+                    // 开始拖拽回调
+                    // source - 被拖拽节点
+                    // evt - 事件对象
+                    console.log('dragstart');
+                },
+                drag({ source, evt, dragX, dragY }) {
+                    // 拖拽中回调
+                    // dragX - 被拖拽的横向距离（鼠标移动距离而不是被拖拽节点的移动距离）
+                    // dragY - 被拖拽的纵向距离（鼠标移动距离而不是被拖拽节点的移动距离）
+                    console.log('drag', dragX, dragY);
+                },
+                dragend({ source, evt }) {
+                    // 拖拽结束回调
+                    console.log('dragend');
+                },
+                click({ source, evt }) {
+                    // 点击事件
+                    console.log('click');
+                },
+                dblclick({ source, evt }) {
+                    // 双击事件
+                    console.log('dblclick');
+                },
+                mousedown({ source, evt }) {
+                    // 鼠标按下事件
+                    console.log('mousedown');
+                },
+                mousemove({ source, evt }) {
+                    // 鼠标移动事件
+                    console.log('mousemove');
+                },
+                mouseup({ source, evt }) {
+                    // 鼠标弹起事件
+                    console.log('mouseup');
+                },
+            });
+
+            new Drop(node, {
+                name: 'xxx', // 可放置在 同名 或 无名字 的drop元素
+
+                dragenter({ source, target, evt }) {
+                    // 拖拽元素进入当前元素回调
+                    // source - 被拖拽节点
+                    // target - 拖入的节点
+                    // evt - 事件对象
+                    console.log('dragenter');
+                },
+                dragleave({ source, target, evt }) {
+                    // 拖拽元素离开当前元素回调
+                    console.log('dragleave');
+                },
+                dragover({ source, target, evt, offsetX, offsetY }) {
+                    // 拖拽元素在当前元素中移动回调
+                    // offsetX - 鼠标相对拖入的节点的横向偏移
+                    // offsetY - 鼠标相对拖入的节点的纵向偏移
+                    console.log('dragover', offsetX, offsetY);
+
+                    let sindex = getIndex(source);
+                    let tindex = getIndex(target);
+
+                    if (tindex > sindex) {
+                        // 前往后插
+                        parent.removeChild(source);
+                        parent.insertBefore(source, target.nextSibling);
+                    } else if (tindex < sindex) {
+                        // 后往前插
+                        parent.removeChild(source);
+                        parent.insertBefore(source, target);
+                    }
+                },
+                drop({ source, target, evt }) {
+                    // 拖拽元素放置在当前元素回调
+                    console.log('drop', source, target);
+                },
+            });
+        }
+    </script>
+</body>
+</html>
