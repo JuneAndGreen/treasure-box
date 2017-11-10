@@ -304,24 +304,30 @@
 
             // 如果当前鼠标下的drop对象不是保存的drop对象，则表明已离开保存的drop对象进入新的drop对象了，要调整保存的drop对象
             if (this.droppable !== pointDroppable) {
-                this.droppable && this.droppable.dispatchDragLeave({
-                    source: this.element,
-                    evt,
-                });
+                if (this.droppable && this.droppable.name === this.name) {
+                    this.droppable.dispatchDragLeave({
+                        source: this.element,
+                        evt,
+                    });
+                }
 
-                pointDroppable && pointDroppable.dispatchDragEnter({
-                    source: this.element,
-                    evt,
-                });
+                if (pointDroppable && pointDroppable.name === this.name) {
+                    pointDroppable.dispatchDragEnter({
+                        source: this.element,
+                        evt,
+                    });
+                }
 
                 this.droppable = pointDroppable;
             }
 
             // dragEnter之后也要dragOver
-            pointDroppable && pointDroppable.dispatchDragOver({
-                source: this.element,
-                evt,
-            });
+            if (pointDroppable && pointDroppable.name === this.name) {
+                pointDroppable.dispatchDragOver({
+                    source: this.element,
+                    evt,
+                });
+            }
         }
 
         /**
