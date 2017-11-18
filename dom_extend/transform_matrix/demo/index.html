@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <style>
+        .box {
+            position: absolute;
+            left: 300px;
+            top: 300px;
+
+            width: 100px;
+            height: 100px;
+            background-color: #000;
+        }
+
+        .change {
+            /* 以左上角为基点来设置中心点 */
+            transform-origin: 300px 300px 0;
+            transform: rotate(45deg);
+        }
+
+        .change2 {
+            background-color: red;
+        }
+
+        .dot {
+            position: absolute;
+            left: 600px;
+            top: 600px;
+
+            width: 5px;
+            height: 5px;
+            background-color: green;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <!-- 原位置 -->
+    <div class="box"></div>
+    <!-- 使用非矩阵旋转 -->
+    <div class="box change"></div>
+    <!-- 使用矩阵 + translate旋转 -->
+    <div id="a" class="box change2"></div>
+    <!-- 使用纯矩阵旋转 -->
+    <div id="b" class="box change2"></div>
+    <!-- 旋转点 -->
+    <div class="dot"></div>
+
+    <script type="text/javascript" src="../transfrom_matrix.js"></script>
+    <script>
+        let scaleX = scaleY = scaleZ = 1;
+        let translateX = translateY = translateZ = rotateX = rotateY = skewX = skewY = 0;
+        let rotateZ = 45;
+
+        // 与transform-origin不同，此处以节点自身的中心为基点来设置中心点，所以相比transform要减去自身宽高点一半，即50
+        let originX = 250;
+        let originY = 250;
+        let originZ = 0;
+
+        // 使用矩阵 + translate旋转
+        let aMatrix3D = new Matrix3D();
+        let aMatrix = aMatrix3D.transform(translateX, translateY, translateZ, scaleX, scaleY, scaleZ, rotateX, rotateY, rotateZ, skewX, skewY);
+        let offset = aMatrix3D.calcOffset(originX, originY, originZ);
+
+        let a = document.getElementById('a');
+        a.style.transform = `translate3d(${offset.x}px, ${offset.y}px, ${offset.z}px) matrix3d(${aMatrix.join(',')})`;
+
+        // 使用纯矩阵旋转
+        let bMatrix3D = new Matrix3D();
+        let bMatrix = bMatrix3D.transformWithOrigin(translateX, translateY, translateZ, scaleX, scaleY, scaleZ, rotateX, rotateY, rotateZ, skewX, skewY, originX, originY, originZ);
+
+        let b = document.getElementById('b');
+        b.style.transform = `matrix3d(${bMatrix.join(',')})`;
+    </script>
+</body>
+</html>

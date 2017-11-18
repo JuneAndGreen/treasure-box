@@ -6,9 +6,12 @@ demo和工具可以用来学习也可以用来快速使用开发，此处不提�
 
 ## dom_extend
 
+* color_picker：一个简单的拾色器。
+* drag_drop：拖拽、拖放相关。
 * mouse_event：鼠标事件扩展，支持拖拽、双击、划动等。
-* x-input：输入框扩展，支持拖拽、键盘上下键来修改输入框内的数值大小。
 * touch-swipe：触摸滑动回弹效果，可用于下拉刷新等场景。
+* transform_matirix：样式中各种transform变形到矩阵的转换。
+* x_input：输入框扩展，支持拖拽、键盘上下键来修改输入框内的数值大小。
 
 ## electron
 

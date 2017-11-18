@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #cnt {
+            position: absolute;
+            left: 200px;
+            top: 200px;
+            padding: 6px;
+            background-color: #fff;
+            box-shadow: 0 0 3px 1px #000;
+        }
+
+        #info {
+            position: absolute;
+            left: 500px;
+            top: 200px;
+            padding: 6px;
+            background-color: #fff;
+            box-shadow: 0 0 3px 1px #000;
+        }
+
+        #color {
+            margin-left: 5px;
+            margin-top: 5px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .block {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .lab {
+            width: 20px;
+            margin: 0 5px;
+            font-size: 14px;
+            text-align: right;
+        }
+
+        .ipt {
+            width: 40px;
+        }
+
+        #hex {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cnt"></div>
+    <div id="info">
+        <div id="color"></div>
+        <div class="block">
+            <label class="lab">hex</label>
+            <input class="ipt" id="hex" type="text">
+        </div>
+        <div class="block">
+            <label class="lab">R</label>
+            <input class="ipt" id="r" type="text">
+            <label class="lab">G</label>
+            <input class="ipt" id="g" type="text">
+            <label class="lab">B</label>
+            <input class="ipt" id="b" type="text">
+            <label class="lab">A</label>
+            <input class="ipt" id="a" type="text">
+        </div>
+        <div class="block">
+            <label class="lab">H</label>
+            <input class="ipt" id="h" type="text">
+            <label class="lab">S</label>
+            <input class="ipt" id="s" type="text">%
+            <label class="lab">L</label>
+            <input class="ipt" id="l" type="text">%
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../color_picker.js"></script>
+    <script>
+        let hex = document.getElementById('hex');
+        let r = document.getElementById('r');
+        let g = document.getElementById('g');
+        let b = document.getElementById('b');
+        let a = document.getElementById('a');
+        let h = document.getElementById('h');
+        let s = document.getElementById('s');
+        let l = document.getElementById('l');
+
+        let colorShow = document.getElementById('color');
+
+        function setInputValue(result) {
+            let color = result.color;
+
+            hex.value = result.hex;
+            r.value = color.rgb.r;
+            g.value = color.rgb.g;
+            b.value = color.rgb.b;
+            a.value = color.alpha;
+            h.value = color.hsl.h;
+            s.value = color.hsl.s;
+            l.value = color.hsl.l;
+
+            colorShow.style.backgroundColor = result.rgba;
+        }
+
+        let colorPicker = new ColorPicker(document.getElementById('cnt'), {
+            color: 'rgba(150, 235, 59, 0.5)', // 默认颜色
+            background: '#fff', // 背景色
+            onChange(result) {
+                // 监听颜色变化
+                // 
+                // result - 颜色信息，结构如下
+                // {
+                //     rgb: 'rgb(255, 255, 255)',
+                //     rgba: 'rgba(255, 255, 255, 1)',
+                //     hex: '#FFFFFF',
+                //     hsl: 'hsl(89, 0%, 100%)',
+                //     color: {
+                //         rgb: {
+                //             r: 255,
+                //             g: 255,
+                //             b: 255,
+                //         },
+                //         hsl: {
+                //             h: 89,
+                //             s: 0,
+                //             l: 100,
+                //         },
+                //         alpha: 1
+                //     }
+                // }
+                console.log(result);
+                setInputValue(result);
+            }
+        });
+
+        // 设置输入框初始值
+        let result = colorPicker.getColor(); // getColor 返回值和onChange里返回的result结构相同
+        setInputValue(result);
+
+        // 监听输入框事件
+        [hex, r, g, b, a, h, s, l].forEach(input => {
+            input.addEventListener('blur', evt => {
+                let target = evt.currentTarget;
+                let key = target.id;
+                let value = target.value;
+
+                if (key === 'a') {
+                    // 设置alpha值
+                    colorPicker.setAlpha(+value);
+                } else if (['r', 'g', 'b'].indexOf(key) >= 0) {
+                    // 设置rgb
+                    colorPicker.setColor({ [key]: +value }, 'rgb');
+                } else if (['h', 's', 'l'].indexOf(key) >= 0) {
+                    // 设置hsl
+                    colorPicker.setColor({ [key]: +value }, 'hsl');
+                } else if (key === 'hex') {
+                    // 设置hex
+                    colorPicker.setColor(value);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
