@@ -11,13 +11,19 @@
   "build": {
     "appId": "com.june01.calculator",
     "win": {
-      "icon": "./icon.ico"
+      "icon": "./icon.png"
+    },
+    "dmg": {
+      "icon": "./icon.png"
+    },
+    "mac": {
+      "icon": "./icon.png",
+      "target": "dmg"
     }
   },
   "dependencies": {},
   "devDependencies": {
-    "7zip-bin-win": "^2.1.1",
     "electron": "^1.7.8",
-    "electron-builder": "^19.34.2"
+    "electron-builder": "^19.55.3"
   }
 }
