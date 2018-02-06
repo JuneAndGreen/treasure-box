@@ -13,9 +13,6 @@
     "win": {
       "icon": "./icon.png"
     },
-    "dmg": {
-      "icon": "./icon.png"
-    },
     "mac": {
       "icon": "./icon.png",
       "target": "dmg"
