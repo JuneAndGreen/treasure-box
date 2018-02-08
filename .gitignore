@@ -12,3 +12,5 @@ express_blog/logs/
 
 koa2_blog/logs/
 koa2_blog/webapp/src/css/
+
+react-native/*/.expo
