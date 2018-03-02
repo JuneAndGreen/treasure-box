@@ -11,6 +11,7 @@ koa_blog/webapp/src/css/
 express_blog/logs/
 
 koa2_blog/logs/
-koa2_blog/webapp/src/css/
+
+electron/*/dist
 
 react-native/*/.expo
